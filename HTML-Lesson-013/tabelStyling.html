@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel Styling</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+      th:nth-child(even),
+      td:nth-child(even) {
+        background-color: aqua;
+      }
+      tr:nth-child(even) {
+        background: #d6eeee;
+      }
+      tr:nth-child(even):hover,
+      td:nth-child(even):hover {
+        background-color: coral;
+      }
+      tr:nth-child(odd):hover,
+      td:nth-child(odd):hover {
+        background-color: darkkhaki;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Zbra Striped Table</h2>
+    <p>
+      For Zebra-Striped tables, use the nth-child() selector and add a
+      background-color to all even (or add) table rows:
+    </p>
+
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+    </table>
+  </body>
+</html>
