@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id in tags</title>
+    <style>
+      /* Style the element with the id "myHeader" */
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+      /* Style all elements with the class name "City"*/
+      .city {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeadr":</p>
+    <h1 id="myHeader">My header</h1>
+
+    <hr />
+    <h2>Differentce Between Class and ID</h2>
+    <p>
+      A class name can be used by multiple HTML elements, while an id name must
+      only be used by one HTML Element whitin the page:
+    </p>
+    <!--   An element with a unique id -->
+    <h1 id="myHearts">My Cities</h1>
+
+    <!--Multiple elements with same class-->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <hr />
+    <p><a href="#c1">Jump to Chapter 1</a></p>
+    <p><a href="#c2">Jump to End</a></p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam
+      repellat porro ipsam ipsum alias illum necessitatibus quaerat, nulla, enim
+      blanditiis. Reprehenderit nostrum ex ullam at dolor! Similique, recusandae
+      delectus. Neque laboriosam ex quam quas dolorem quisquam? Molestiae eos
+      quas, nemo, itaque sint repudiandae mollitia placeat voluptatem, voluptate
+      suscipit eaque neque inventore accusamus nihil? Optio laboriosam veniam
+      earum deleniti dolores? Quibusdam molestiae saepe labore beatae porro
+      libero quasi pariatur exercitationem quam eum, dolorem mollitia
+      distinctio. Porro, quidem ea voluptas nostrum et cum, numquam dolor
+      dolorem sequi corrupti, quisquam omnis. Magnam. Culpa, dolore maiores enim
+      modi iste officia expedita possimus vel qui, ullam odio tempora deleniti
+      quidem aperiam pariatur iusto rem nam ea quis totam. Possimus provident
+      repellat magnam odit fugiat! Accusamus sunt possimus reprehenderit eveniet
+      ipsa ducimus quos maiores voluptatibus. Saepe id, optio sit adipisci totam
+      esse quasi eaque ipsam fugiat minus obcaecati, suscipit asperiores
+      cupiditate! Vitae et illo commodi!
+    </p>
+    <h3 id="c1">chapter 1</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt
+      dolor voluptas, sequi magnam quidem quos facere dolores dolorem assumenda
+      veniam, expedita impedit commodi numquam cum. Officia labore ut dolorem.
+      Aperiam incidunt hic, quaerat totam minima officia! Consectetur doloribus
+      magnam saepe nisi maxime? Dolorem iure enim itaque totam qui voluptate
+      molestias sed, minima culpa explicabo, autem obcaecati nihil repudiandae
+      quas. Ipsum corrupti inventore officia? Laboriosam ipsam sunt aspernatur
+      similique dolore quo veniam doloribus dolor voluptatem voluptatibus
+      laudantium nihil officia ipsa, ratione perferendis ipsum porro in iste.
+      Autem adipisci est aperiam. Laborum quis doloremque illum beatae aliquid
+      et impedit cupiditate facere. Corporis, nostrum. Ipsa consequuntur rem
+      nulla vitae molestiae aliquid et aperiam magnam? At numquam vero
+      consequuntur ducimus dolor labore totam? Optio sequi magnam illo delectus
+      ut corrupti esse, tempora impedit cupiditate dolore velit voluptate dicta
+      nisi ullam dolor excepturi deleniti, ipsa fugit est. Fugiat neque mollitia
+      at impedit explicabo sint! Repudiandae necessitatibus quasi illo totam
+      iste dolore reiciendis! Laboriosam reiciendis consectetur adipisci? Rem,
+      dolore? Optio vitae esse officiis nobis quis! Et eos temporibus veritatis
+      corporis ullam iste esse ad dicta! Aspernatur libero placeat ullam,
+      voluptatibus hic error laborum aliquid cumque distinctio, deserunt
+      assumenda provident animi sequi ducimus ipsam id nulla nemo unde!
+      Temporibus voluptas reprehenderit magnam rem commodi quidem dolor. Quas
+      modi necessitatibus a optio beatae voluptatibus ratione accusantium. Est,
+      harum delectus? Ipsa commodi necessitatibus pariatur hic esse, inventore
+      veritatis reprehenderit aliquid iure totam assumenda voluptate quo, itaque
+      dolore consequatur. Repellendus error asperiores odio nihil nostrum!
+      Consequuntur recusandae dolores, libero nesciunt ad illo alias hic
+      repudiandae aut vel ea ut, doloremque dolorem aspernatur soluta
+      perspiciatis veniam culpa excepturi. Mollitia, nesciunt. Quae, aspernatur
+      id nulla tenetur reprehenderit dolores? Recusandae explicabo placeat harum
+      fugiat deserunt unde quasi maxime! Minima, voluptatum repellendus. Maiores
+      magnam nisi autem molestiae impedit officia quas voluptate laboriosam ad.
+    </p>
+    <h3 id="c2">the end</h3>
+    <hr />
+    <button onclick="displayResult()">Change text</button>
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+      }
+    </script>
+  </body>
+</html>
