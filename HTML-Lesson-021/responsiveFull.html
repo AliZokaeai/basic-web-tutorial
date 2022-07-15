@@ -4,9 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The responsive project</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      .menu a {
+        background-color: #e5e5e5;
+        padding: 8px;
+        margin-top: 7px;
+        display: inline-block;
+        width: 100%;
+        color: black;
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+      }
+
+      .right {
+        border-color: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones */
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
-  <body>
-    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3
+  <body style="font-family: Verdana; color: #aaa">
+    <div style="background-color: #e5e5e5; padding: 15px; text-align: center">
+      <h1>Hello World</h1>
+    </div>
+    <div style="overflow: auto">
+      <div class="menu">
+        <a href="#">The Link</a>
+        <a href="#">The Link</a>
+        <a href="#">The Link</a>
+        <a href="#">The Link</a>
+      </div>
+
+      <div class="main">
+        <h2>The Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          praesentium debitis voluptatum ex mollitia, enim eaque aliquid nisi
+          molestias est illum placeat repellat dignissimos perspiciatis ipsam
+          alias minima possimus quasi.
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+          illum repudiandae facilis nemo sequi quasi perferendis asperiores
+          ducimus dolorem, quia sint placeat est? Dolor quidem, magnam mollitia
+          accusamus deleniti aspernatur?
+        </p>
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: #e5e5e5;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+      "
+    >
+      (C) Copyright W3Scools.com
+    </div>
   </body>
 </html>
