@@ -1,0 +1,43 @@
+.a {
+  list-style-type: circle;
+}
+
+.b {
+  list-style-type: square;
+}
+
+.c {
+  list-style-type: upper-roman;
+}
+
+.d {
+  list-style-type: lower-alpha;
+}
+
+.e {
+  list-style-image: url("pic001.png");
+  list-style-position: inside;
+}
+
+ol.color {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul.color {
+  background-color: #3399ff;
+  padding: 20px;
+}
+
+ol.color li {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul.color li {
+  background-color: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
