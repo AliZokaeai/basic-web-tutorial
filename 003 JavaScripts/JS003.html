@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What can JavaScript Do?</title>
+  </head>
+  <body>
+    <h2>What can JavaScript do?</h2>
+    <p>JavaScript can change HTML attribute value.</p>
+    <p>
+      In this case JavaScript changes the value of the src (Source) attribute of
+      an image.
+    </p>
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn on the light
+    </button>
+
+    <img src="pic_bulboff.gif" id="myImage" style="width: 100px" />
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+      Turn off the light.
+    </button>
+    <hr />
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demoText">JavaScript can Change the style of an HTML element.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demoText').style.fontSize='35px'"
+    >
+      CLick Me for make Bigger font!
+    </button>
+    <hr />
+    <h2>What Can JavaScript Do?</h2>
+    <p id="textDemo">JavaScript can hide HTML element.</p>
+    <button
+      type="button"
+      id="theHiddeButton"
+      onclick="document.getElementById('textDemo').style.display='none';
+      document.getElementById('theShowBotton').style.display='block';
+      document.getElementById('theHiddeButton').style.display='none';
+      "
+    >
+      Click me to hide this...!
+    </button>
+    <button
+      type="button"
+      id="theShowBotton"
+      onclick="document.getElementById('textDemo').style.display='block';
+      document.getElementById('theShowBotton').style.display='none';
+      document.getElementById('theHiddeButton').style.display='block';"
+      style="display: none"
+    >
+      Click me to Show this...!
+    </button>
+  </body>
+</html>
