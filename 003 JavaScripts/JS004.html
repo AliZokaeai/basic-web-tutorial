@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello world</title>
+  </head>
+  <body>
+    <button onclick="alert('Thank you')">Click Me</button>
+    <script>
+      let x;
+      x = 0;
+      console.log(x);
+      x = 1;
+      console.log(x);
+      x = 0.01;
+      console.log(x);
+      x = "Hello world";
+      console.log(x);
+      x = true;
+      console.log(x);
+      let book = {
+        topic: "JavaScript",
+        edition: 7,
+      };
+
+      console.log(book.topic);
+      book.author = "Flanagan";
+      console.log(book.author);
+      let points = [
+        { x: 0, y: 0 },
+        { x: 1, y: 1 },
+      ];
+
+      let data = {
+        trial1: [
+          [1, 2],
+          [3, 4],
+        ],
+        trial2: [
+          [2, 3],
+          [4, 5],
+        ],
+      };
+
+      console.log(points[1]);
+      let a = [];
+      a.push(1, 2, 3);
+      console.log(a.reverse());
+
+      points.dist = function () {
+        let p1 = this[0];
+        let p2 = this[1];
+        console.log(points.p1);
+        console.log(points.p2);
+        let a = p2.x - p1.x;
+        let b = p2.y - p1.y;
+
+        return Math.sqrt(a * a + b * b);
+      };
+      points.p1 = { x: 0, y: 0 };
+      console.log(points.p1);
+      points.p2 = { x: 16, y: 9 };
+      console.log(points.p2);
+      console.log(points.dist());
+      console.log("\u{1F600}");
+      let ali = 38;
+      console.log(Number.isNaN(ali));
+      console.log(Number.isFinite(ali));
+      console.log(Number.isInteger(ali));
+      console.log(Number.isSafeInteger(ali));
+      console.log(Number.isNaN(ali));
+
+      let timestamp = Date.now();
+      let now = new Date();
+      let ms = now.getTime();
+      let iso = now.toISOString();
+
+      console.log(ms);
+      console.log(iso);
+      console.log("tow\nlines");
+      console.log("one\
+      loge\
+      line");
+    </script>
+  </body>
+</html>
