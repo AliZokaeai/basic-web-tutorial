@@ -1,0 +1,24 @@
+.header {
+  background-color: #7695fe;
+  border: thin #336699 solid;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0px;
+  color: white;
+  font-size: xx-large;
+}
+
+.header .teaser {
+  margin: 0;
+  font-weight: bold;
+}
+
+.header .Byline {
+  font-style: italic;
+  font-size: small;
+  margin: 0px;
+}

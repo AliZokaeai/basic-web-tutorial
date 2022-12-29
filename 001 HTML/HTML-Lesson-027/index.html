@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The libraries -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="modernizr-custom.js"></script>
+    <title>A tiny HTML Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Header is here</h1>
+    </div>
+    <p>The Verdic is ... <span id="result"></span></p>
+
+    <script>
+      var result = document.getElementById("result");
+      if (window.FileReader && Modernizr.draganddrop) {
+        result.innerHTML = "Rejoice! Your browser support drag and dorp.";
+      } else {
+        result.innerHTML = "Your Feeble browser doesn't support drag and drop.";
+      }
+    </script>
+  </body>
+</html>
