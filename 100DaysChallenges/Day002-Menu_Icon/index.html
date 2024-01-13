@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Icon</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -19,6 +19,12 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.menu-icon').bind('click', function () {
+            $(this).toggleClass('clicked');
+            $(this).find('div').removeClass('no-animation');
+        });
+    </script>
 </body>
 
 </html>
