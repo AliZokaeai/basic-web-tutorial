@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .first {
+            background-color: aqua;
+            color: darkblue
+        }
+
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city first">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, quisquam?</p>
+    </div>
+    <div class="city">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, quisquam?</p>
+    </div>
+    <div class="city">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, quisquam?</p>
+    </div>
+    <br>
+    <hr>
+    <h1>my <span class="note"> important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text</p>
+    <button onclick="myfunction()">Hide Elements</button>
+    <script>
+        var d = 1;
+        function myfunction() {
+
+            var x = document.getElementsByClassName("city");
+            if (d == 0) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                d = 1;
+                console.log(d);
+                console.log("hi");
+            } else {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+                d = 0;
+                console.log(d);
+            }
+            console.log(d);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
