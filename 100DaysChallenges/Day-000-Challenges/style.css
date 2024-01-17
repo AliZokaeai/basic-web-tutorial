@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+}
+li{
+    display: block;
+    height: 30px;
+    background-color: burlywood;
+    padding: 0.5rem;
+    margin: 3px;
+    width: 30%;
+    font-size: 2em;
+    color:wheat;
+    overflow: hidden;
+}
+li:hover{
+    background-color: beige;
+}
