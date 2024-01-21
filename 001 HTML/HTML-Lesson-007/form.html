@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        label {
+            margin: 3px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        form {
+            border: 1px solid black;
+            display: block;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Ali"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" id="lname" value="Zokaei">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <form action="">
+        <input type="radio" id="html" name="fav_language" Value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" Value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <br>
+        <hr>
+        <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label> <br>
+        <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+        <label for="vehicle2"> I have a Car</label> <br>
+        <input type="checkbox" name="vehicle3" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a Boat</label>
+    </form>
+</body>
+
+</html>
