@@ -4,34 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Icon</title>
+    <title>The Pyramide</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <!-- the header -->
     <div class="frame">
         <div class="center">
-            <div class="menu-icon">
-                <div class="line-1 no-animation"></div>
-                <div class="line-2 no-animation"></div>
-                <div class="line-3 no-animation"></div>
+            <div class="circle">
+                <div class="sky"></div>
+                <div class="sun"></div>
+                <div class="side-left"></div>
+                <div class="side-right"></div>
+                <div class="shadow"></div>
+                <div class="ground"></div>
             </div>
         </div>
     </div>
+
     <!-- home button -->
     <a href="../Day-000-Challenges/index.html"
         style="display:block;background: lightblue;padding: 5px; text-decoration: none; color:Blue;margin: 10px; text-align: center; font-size: 1.5em;">🏠
         Home</a>
     <!-- Home button -->
-
-    <script>
-        $('.menu-icon').bind('click', function () {
-            $(this).toggleClass('clicked');
-            $(this).find('div').removeClass('no-animation');
-        });
-    </script>
 </body>
 
 </html>
