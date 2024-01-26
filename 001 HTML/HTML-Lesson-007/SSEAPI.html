@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSE API</title>
+</head>
+
+<body>
+    <h1>Getting Server updates</h1>
+    <div id="result"></div>
+
+    <script>
+        if (typeof (EventSuorce) !== "undefined") {
+            var source = new EventSuorce("demo_see.php");
+            source.onmessage = function (event) {
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser doesn't support server-sent events ..."
+        }
+    </script>
+</body>
+
+</html>
