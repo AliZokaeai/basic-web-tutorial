@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of learning files</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: auto;
+        }
+
+        div.parts {
+            width: 27%;
+            height: 70vh;
+            float: left;
+            border: 1px solid black;
+            margin: 5% 3%;
+            /* overflow: scroll; */
+            padding: 10px;
+
+        }
+
+        div.parts:hover {
+            border: 2px solid rgb(17, 161, 94);
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.0.7);
+        }
+
+        div.parts h2 {
+
+            display: block;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 1px;
+            background-color: darkgreen;
+            color: aliceblue;
+            padding: 10px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 5px 5px rgba(4, 116, 4, 0.3);
+        }
+
+        div.parts iframe {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HTML Exercises -->
+        <div class="parts">
+            <h2>HTML Exercises </h2>
+            <iframe src="001 HTML/HTML-Lessons/000ListOfExercises.html" frameborder="0" width="100%" height="70%"
+                scrolling=""></iframe>
+        </div>
+
+        <!-- CSS Exercises -->
+        <div class="parts">
+            <h2>CSS Exercises </h2>
+            <iframe src="002 CSS/List-of-css-files.index.html" frameborder="0" width="100%" height="70%"
+                scrolling=""></iframe>
+        </div>
+
+        <!-- JavaScript Exercises -->
+        <div class="parts">
+            <h2>JavaScript Exercises </h2>
+            <iframe src="https://github.com/AliZokaeai" frameborder="0" width="100%" height="70%" scrolling=""></iframe>
+        </div>
+
+        <!-- 100Days Challenge -->
+        <div class="parts">
+            <h2>100Days Challenges </h2>
+            <iframe src="100DaysChallenges/Day-000-Challenges/index.html" frameborder="0" width="100%" height="70%"
+                scrolling=""></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
