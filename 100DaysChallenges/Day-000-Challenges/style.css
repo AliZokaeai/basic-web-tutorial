@@ -4,30 +4,31 @@
 a{
     text-decoration: none;
 }
-
-li{
+div.header-links{
     display: block;
-    height: 30px;
-    background-color: rgb(227, 226, 226);
-    padding: 0.5rem;
-    margin: 3px;
-    width: 30%;
-    font-size: 1em;
-    color:wheat;
-    overflow: hidden;
+    height: 300px;
+    overflow: scroll;
+    background-color: antiquewhite;
+    text-align: center;
 }
-li:hover{
-    background-color: beige;
+div.header-links h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blue;
+    font-size: 2em;
+    margin: 10px;
+    border-bottom: 1px black solid;
+
 }
-/* a.iframes {
-    position: absolute;
-    display: inline;
-    padding: 10px;
-    border: 2px solid #eee;
-    margin: 5px;
-    background-color: rgb(138, 142, 142);
-    
-} */
+div.header-links a{
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    background-color: #e3e3e3;
+    color:black;
+}
+div.header-links a:hover{
+    background-color: #9f9f9f;
+}
 a.iframes{
     display: block;
     float: left;
