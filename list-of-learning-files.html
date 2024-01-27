@@ -10,21 +10,22 @@
             box-sizing: border-box;
         }
 
-        html,
+        /* html,
         body {
             padding: 0 !important;
             width: 100%;
             height: 100%;
-        }
+        } */
 
         div.container {
             width: 100%;
             height: 100%;
             text-align: center;
             margin: 0;
-            background-color: rgb(6, 30, 75);
+            /* background-color: rgb(6, 30, 75); */
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         div.parts {
@@ -85,18 +86,6 @@
         ul.list li:hover {
             background-color: #c9c9c9;
             font-size: larger;
-        }
-
-        @media screen and (max-width: 480px) {
-            .container {
-                background-color: red;
-            }
-
-            div.parts {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
         }
     </style>
 </head>
