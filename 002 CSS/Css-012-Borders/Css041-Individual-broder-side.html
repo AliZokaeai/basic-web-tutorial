@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual border sides</title>
+    <style>
+        p {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+
+        p.styles {
+            border-style: dotted solid;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        /* Four values */
+        p.four {
+            border-style: dotted solid double dashed;
+        }
+
+        /* Three values */
+
+        p.there {
+            border-style: dotted solid double;
+        }
+
+        /* Two value */
+        p.two {
+            border-style: dotted solid;
+        }
+
+        /* One value */
+        p.one {
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Individual broder Sides</h2>
+    <p>2 different broder styles.</p>
+    <p class="styles">2 different broder styles.</p>
+
+    <hr>
+    <h2>Individual border sides</h2>
+    <p class="four">4 different boder styles.</p>
+    <p class="Three">3 different boder styles.</p>
+    <p class="Two">2 different boder styles.</p>
+    <p class="one">1 different boder style.</p>
+</body>
+
+</html>
