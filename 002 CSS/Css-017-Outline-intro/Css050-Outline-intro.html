@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline intro</title>
+    <style>
+        p {
+            border: 2px solid black;
+            outline: #4caf50 solid 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 40px 10px;
+        }
+
+        p.dotted {
+            outline-style: dotted;
+        }
+
+        p.dashed {
+            outline-style: dashed;
+        }
+
+        p.solid {
+            outline-style: solid;
+        }
+
+        p.double {
+            outline-style: double;
+        }
+
+        p.groove {
+            outline-style: groove;
+        }
+
+        p.ridge {
+            outline-style: ridge;
+        }
+
+        p.inset {
+            outline-style: inset;
+        }
+
+        p.outset {
+            outline-style: outset;
+        }
+
+        /* Different outline widths */
+        p.ex1 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thin;
+        }
+
+        p.ex2 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: blueviolet;
+            outline-width: medium;
+        }
+
+        p.ex3 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: green;
+            outline-width: thick;
+        }
+
+        p.ex4 {
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: blue;
+            outline-width: 4px;
+        }
+
+        /* Shorthand  */
+        p.ex5 {
+            outline: thick ridge pink;
+        }
+
+        /* Offset */
+
+        p.offset {
+            margin: 30px;
+            background: yellow;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS outline</h2>
+    <p>This element has a 2px black broder and a green outline width a width of 10px.</p>
+
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dahsed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">A inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">A outset outline. The effect depends on the outline-color value.</p>
+
+    <hr>
+    <h2>The outline-width Property</h2>
+
+    <p class="ex1">A thin outline.</p>
+    <p class="ex2">A medium outline.</p>
+    <p class="ex3">A thick outline.</p>
+    <p class="ex4">A 4px thick outline.</p>
+    <p class="ex5">A pink and Shorthand outline theme</p>
+
+    <!-- Offset -->
+    <hr>
+    <p class="offset">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, ullam reiciendis! Tempore, rerum doloremque
+        repudiandae mollitia beatae vitae facilis dignissimos omnis iusto nesciunt ad, voluptatum magni asperiores
+        ullam, est maiores!
+    </p>
+</body>
+
+</html>
