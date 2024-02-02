@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text formatting with CSS</title>
+    <style>
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4caf50;
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #008cba;
+        }
+
+        p.c {
+            text-align-last: left;
+        }
+
+        p.d {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Text Formatting</h1>
+        <p>This text is styled with some of the text formatting properties. The Heading uses the text-align,
+            text-transfotm, and color properties.
+            the paragraph is indented, aligned, and the space between characters is specified. The underline is removed
+            from this colored.
+            <a href="#">"Try it yourself"</a> link.
+        </p>
+        <p class="c">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus eaque repellendus est asperiores voluptates
+            distinctio, molestias soluta, consequuntur ullam accusantium nam cum provident doloremque nobis laborum.
+            Debitis sapiente quibusdam officiis?
+        </p>
+        <p class="d">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odio, aperiam sequi maiores ab omnis
+            impedit numquam. Cumque ab natus aliquid ex ad fugiat? Dolor velit illo voluptates debitis libero!
+        </p>
+    </div>
+</body>
+
+</html>

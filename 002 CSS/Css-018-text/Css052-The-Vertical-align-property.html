@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vertical Align property</title>
+    <style>
+        img.b {
+            vertical-align: baseline;
+        }
+
+        img.c {
+            vertical-align: text-top;
+        }
+
+        img.d {
+            vertical-align: text-bottom;
+        }
+
+        img.e {
+            vertical-align: sub;
+        }
+
+        /* Text decoration lines */
+
+        div.decoration {
+            border: 1px gray solid;
+            padding: 10px;
+        }
+
+        div.decoration h1 {
+            text-decoration-line: overline;
+            text-decoration-color: red;
+            text-decoration-style: solid;
+            text-decoration-thickness: 14px;
+        }
+
+        div.decoration h2 {
+            text-decoration-line: line-through;
+            text-decoration-color: aqua;
+            text-decoration-style: double;
+            text-decoration-thickness: thick;
+        }
+
+        div.decoration h3 {
+            text-decoration-line: underline;
+            text-decoration-color: green;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 25%;
+        }
+
+        div.decoration p {
+            text-decoration-line: overline underline;
+            text-decoration-color: brown;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5%;
+
+        }
+
+        div.shorthand {
+            border: 1px gray solid;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div.shorthand h1 {
+            text-decoration: underline red double 5px;
+        }
+
+        div.shorthand h2 {
+            text-decoration: overline blue solid 1px;
+        }
+
+        div.shorthand h3 {
+            text-decoration: line-through green dotted 3px;
+        }
+
+        div.shorthand p.ex {
+
+            text-decoration: underline orange wavy 4px;
+        }
+
+        div.shorthand p {
+            text-decoration: underline black 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Vertical-align: text-top:</h2>
+    <p>An <img src="../../Images/sqpurple.gif" class="b" width="9" height="9">Image with a text-top alignment.</p>
+
+    <h2>Vertical-align: text-bottom:</h2>
+    <p>An <img src="../../Images/sqpurple.gif" class="c" width="9" height="9">Image with a text-bottom alignment.</p>
+
+    <h2>Vertical-align: sub:</h2>
+    <p>An <img src="../../Images/sqpurple.gif" class="d" width="9" height="9">Image with a sub alignment.</p>
+
+    <h2>Vertical-align: sup:</h2>
+    <p>An <img src="../../Images/sqpurple.gif" class="e" width="9" height="9">Image with a super alignment.</p>
+
+    <hr>
+    <div class="decoration">
+        <h2>Overline text decoration</h2>
+        <h2>Line-therough text decoration</h2>
+        <h3>Underline text decoration</h3>
+        <p class="ex">Overline and underline text decoration.</p>
+        <p><strong>Note:</strong> It is not recommanded to underline text that is not a link, as this often confues the
+            reader.</p>
+    </div>
+
+    <div class="shorthand">
+        <h1>Overline text decoration</h1>
+        <h2>Line-therough text decoration</h2>
+        <h3>Underline text decoration</h3>
+        <p class="ex">Overline and underline text decoration.</p>
+        <p><strong>Note:</strong> It is not recommanded to underline text that is not a link, as this often confues the
+            reader.</p>
+    </div>
+</body>
+
+</html>

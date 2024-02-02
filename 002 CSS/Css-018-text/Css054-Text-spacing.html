@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text spacing</title>
+    <style>
+        p.a {
+            text-indent: 50px;
+        }
+
+        h2.b {
+            letter-spacing: -2px;
+        }
+
+        p.b {
+            letter-spacing: 5px;
+        }
+
+        p.small {
+            background-color: rgba(25, 0, 0, 0.4);
+            line-height: 0.5;
+            border: 1px gray dotted;
+        }
+
+        p.big {
+            background-color: rgba(25, 0, 0, 0.4);
+            border: 1px gray dotted;
+            line-height: 2;
+        }
+
+        p.one {
+            word-spacing: 10px;
+        }
+
+        p.two {
+            word-spacing: -10px;
+        }
+
+        p.no-wrap {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="a">Using text intend</h1>
+    <p class="a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae odio ab in molestiae
+        velit libero adipisci maxime similique harum dolores vero, doloremque magnam id. Aut, quos. Minima, illo
+        excepturi.</p>
+
+    <h2 class="b">Usine the letter spacing</h2>
+    <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis, sapiente molestias sequi
+        repellat quisquam expedita quas harum, adipisci voluptatum ut ipsa obcaecati vero iure provident nulla rerum
+        dolorem illo!</p>
+
+    <hr>
+    <h1 class="c">Using line height</h1>
+    <p class="">This is a paragraph with a standard line-height.</p>
+    <p class="small">This is a paragraph with a line-height.</p>
+    <p class="small">This is a paragraph with a line-height.</p>
+    <p class="big">This is a paragraph with a line-height.</p>
+    <p class="big">This is a paragraph with a line-height.</p>
+
+    <hr>
+
+    <h1 class="one">Word spacing</h1>
+
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam delectus quia autem vel natus minus
+        nobis nisi dignissimos vitae dolores est aliquam odit sequi, deserunt fugiat in provident corporis enim? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe officia sed tempora veniam obcaecati
+        recusandae, nulla porro ratione delectus dolorem odio enim, quam perspiciatis velit! Enim voluptatem voluptatum
+        explicabo.</p>
+
+    <p class="two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam repudiandae accusantium suscipit iure
+        blanditiis doloribus ducimus? Nisi quis vel excepturi, facilis a quam nam rem expedita mollitia omnis at. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt voluptatibus similique reiciendis eum ab fugiat
+        eos aspernatur quaerat reprehenderit cumque ipsum quod praesentium sit est maxime, provident laborum omnis.
+    </p>
+
+    <hr>
+    <h1>Using withe-space</h1>
+    <p class="no-wrap">
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+        This is some text that will not wrape.
+    </p>
+
+    <p class="no-wrap">Try to remove the white-space property to see the difference!</p>
+</body>
+
+</html>
