@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font family in CSS</title>
+    <style>
+        .p1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2vw;
+        }
+
+        .p2 {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-style: italic;
+            font-size: 150%;
+        }
+
+        .p3 {
+            font-family: 'Lucida Sans', sans-serif;
+            font-style: oblique;
+            font-size: 2em;
+            /* font-variant: small-caps; */
+
+        }
+
+        body {
+            font-family: 'Sofia', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Georgia|Verdana|">
+</head>
+
+<body>
+    <h1>Css font family</h1>
+    <p class="p1">This is a paragraph, shown in the Time New Roman font.</p>
+    <p class="p2">This is a paragraph, shown in the Arial Roman font.</p>
+    <p class="p3">This is a paragraph, shown in the Lucida Sans font.</p>
+    <hr>
+    <p style="font-family: Audiowide; font-size:1vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+        porro, consectetur necessitatibus<span style="font-family: Sofia; font-size:1vw;">illo vel similique ex
+            voluptatem voluptatum quae</span> , excepturi maxime magni ad
+        totam rerum. Fugiat quam debitis non numquam.</p>
+    <p style="font-family: Triong; font-size:2vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro,
+        consectetur necessitatibus illo vel similique ex voluptatem voluptatum quae, excepturi maxime magni ad totam
+        rerum. Fugiat quam debitis non numquam.</p>
+    <pre style="font: italic /*small-caps*/ bold 34px/30px Georgia, serif;">
+            font-style
+            font-variant
+            font-size/line-height
+            font-family
+    </pre>
+
+</body>
+
+</html>

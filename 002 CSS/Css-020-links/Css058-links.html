@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links in CSS</title>
+    <style>
+        a:link {
+            color: hotpink;
+            text-decoration: none;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        a:visited {
+            color: green;
+            text-decoration-line: line-through;
+            text-decoration-style: solid;
+            text-decoration-thickness: thin;
+        }
+
+        a:hover {
+            color: blue;
+            background: yellow;
+            text-decoration-line: line-through;
+            text-decoration-style: solid;
+            text-decoration-thickness: thin;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        span {
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+            border: 2px solid blue;
+        }
+
+        span:hover {
+            background: blue;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Links in CSS</h1>
+    <a href="https://github.com/alizokaeai" target="_blank">This is a link</a>
+
+    <hr>
+    <h2>The courser Property</h2>
+    <p>Mouse over the word to change the courser.</p>
+
+    <span style="cursor:auto">auto</span>
+    <span style="cursor:crosshair">crosshair</span>
+    <span style="cursor:default">default</span>
+    <span style="cursor:e-resize">e-resize</span>
+    <span style="cursor:help">help</span>
+    <span style="cursor:move">move</span>
+    <span style="cursor:n-resize">n-resize</span>
+    <span style="cursor:ne-resize">ne-resize</span>
+    <span style="cursor:nw-resize">nw-resize</span>
+    <span style="cursor:pointer">pointer</span>
+    <span style="cursor:progress">progress</span>
+    <span style="cursor:s-resize">s-resize</span>
+    <span style="cursor:se-resize">se-resize</span>
+    <span style="cursor:sw-resize">sw-resize</span>
+    <span style="cursor:text">text</span>
+    <span style="cursor:w-resize">w-resize</span>
+    <span style="cursor:wait">wait</span>
+</body>
+
+</html>
