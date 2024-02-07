@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear fix with After</title>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+
+        .image {
+            float: left;
+        }
+
+        .clearfix::after {
+            /* content: "**"; */
+            clear: right;
+            /* display: table; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <img src="../../Images/Pic-240x400-Black.jpg" alt="" width="200" height="200" class="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quib lusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequuntur corrupti
+            beatae sequi esse autem, aperiam, optio earum inventore incidunt distinctio commodi iure dolorem aliquid!
+            Exercitationem molestias labore sint nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quibusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quibusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quibusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quibusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi possimus placeat, aliquid sed nisi
+            molestiae quibusdam laudantium iure magnam tenetur voluptatibus accusantium, facere aut, optio consectetur
+            eaque? Neque, et!</p>
+
+    </div>
+</body>
+
+</html>
