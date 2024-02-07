@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS alignment</title>
+    <style>
+        /* .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            width: 40%;
+            height: 10%;
+            margin: 10px auto;
+        } 
+
+        .setCenter {
+            position: absolute;
+            right: 0;
+
+        } 
+
+        .center {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid green;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .center div.wraper {
+            line-height: 1.5; 
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+        }
+        */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid green;
+            overflow: auto;
+        }
+
+        .center div.warper {
+            width: 30%;
+            height: 50px;
+            line-height: 50px;
+            background-color: antiquewhite;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            margin: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis consequatur harum quidem illum veniam? Sit
+        iure in nihil ipsam? Illum harum ab aliquam, doloribus velit assumenda accusantium tempore saepe quis.
+    </div>
+     <img src="../../Images/Pic-250x360-Blue.jpg" alt="">
+
+    <div class="setCenter">
+        <img src="../../Images/Pic-240x400-Purple.jpg" alt="" width="100px" height="100px">
+    </div> -->
+
+
+    <div class="center">
+        <div class="warper">
+            we are here.
+        </div>
+        <div class="warper">
+            we are here.
+            <img src="../../Images/Pic-240x400-Purple.jpg" alt="">
+        </div>
+        <div class="warper">
+            we are here.
+        </div>
+    </div>
+
+    <div>Hover over this div element to show the p element
+  <p>Tada! Here I am!</p>
+  
+</div>
+
+<p id="hi">Tada! Here gg I am!</p>
+</body>
+
+</html>

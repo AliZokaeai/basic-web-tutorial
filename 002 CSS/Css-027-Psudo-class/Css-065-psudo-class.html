@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo-class</title>
+    <style>
+        span {
+
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        div span.hi:hover {
+
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            left: 17px;
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            overflow: hidden;
+            rotate: 45deg;
+            border-radius: 0% 0% 50% 0%;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            box-shadow: 1px 2px 3px yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hover<span class="hi">Lorem ipsum dolor sit.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sint,
+        eligendi.
+        eligendi.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ipsam veritatis magnam tempora<span
+            class="hi">Lorem ipsum dolor sit amet.</span> reiciendis iste voluptatem perspiciatis dolore, iusto
+        reprehenderit, placeat quo. Nihil, quo! Quibusdam delectus voluptatibus voluptatum ut eius?
+
+    </div>
+
+
+</body>
+
+</html>
