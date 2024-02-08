@@ -1,5 +1,15 @@
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
+}
+div#cahllenges{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 0 10%;
+    width: 100%;
+    border: 3px solid green;
+    overflow:auto;
 }
 
 a{
@@ -36,7 +46,7 @@ a.iframes{
     width:400px;
     height: 440px;
     padding: 10px;
-    margin: 10;
+    margin: 10px;
     background-color: rgb(186, 186, 186);
     border: 1px solid gray;
     text-align: center;
