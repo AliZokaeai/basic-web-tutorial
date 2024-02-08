@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+
+        a[title~="flower"] {
+            background-color: pink;
+        }
+
+        div[class^="top"] {
+            background-color: aquamarine;
+        }
+
+        div[class$="bottom"] {
+            background-color: blueviolet;
+        }
+
+        div[class*="ot"] {
+            background-color: brown;
+        }
+
+        input[type="text"]:focus {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.w3schools.com" title="flower">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <div class="top">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere animi sunt ipsa consequatur libero id cumque,
+        molestiae molestias porro optio incidunt nulla velit ex esse suscipit quis eligendi fugit maiores!
+    </div>
+    <div class="top-ton">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere animi sunt ipsa consequatur libero id cumque,
+        molestiae molestias porro optio incidunt nulla velit ex esse suscipit quis eligendi fugit maiores!
+    </div>
+    <div class="topbottom">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid, ducimus eveniet nesciunt quia quasi
+        similique? Itaque eos tempora fuga, minima quidem praesentium corporis tempore, officiis architecto sed enim
+        assumenda?
+    </div>
+    <form action="">
+        <input type="text" name="" id="">
+    </form>
+</body>
+
+</html>

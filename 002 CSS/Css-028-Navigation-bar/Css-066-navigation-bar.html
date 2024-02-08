@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code for navigation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 37px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0);
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+
+
+
+        }
+
+        ul:hover {
+            /* background: rgba(0, 0, 0, 0.5); */
+            box-shadow: 0 0 5px 1px #555;
+        }
+
+        li {
+            display: block;
+            float: left;
+        }
+
+        li a {
+            text-align: center;
+            display: block;
+            width: 200px;
+            background: wheat;
+            color: #000;
+            padding: 8px;
+            text-decoration: none;
+            border-right: 2px solid white;
+        }
+
+        li:last-child {
+            float: right;
+        }
+
+        li:last-child a {
+            border-left: 2px solid black;
+            background-color: #555;
+            color: whitesmoke;
+
+        }
+
+        li:last-child a:hover {
+            border: 2px solid #04AA6d;
+            color: #04AA6d;
+            background: whitesmoke;
+
+        }
+
+        li a:hover,
+        li a.active:hover {
+            background: #555;
+            color: #fff;
+        }
+
+        li a.active {
+            background-color: #04AA6d;
+            color: white;
+        }
+
+        div {
+            font-size: 3vw;
+        }
+
+        ul.dropdown {
+            display: none;
+            width: 200px;
+            height: auto;
+            background: #555;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.dropdown li {
+            display: block;
+            width: 200px;
+            color: whitesmoke;
+            padding: 10px;
+            background-color: red;
+        }
+
+        li.dropbtn:hover ul.dropdown {
+            display: block;
+        }
+
+        ul.dropdown li:hover {
+            background-color: maroon;
+        }
+
+
+
+        @media screen and (max-width:900px) {
+            ul {
+                display: block;
+                height: auto;
+            }
+
+
+            li a {
+                display: block;
+                width: 100%;
+                overflow: visible;
+            }
+
+            li:last-child {
+                float: left;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li class="dropbtn"><a href="#">Contact</a>
+            <ul class="dropdown">
+                <li>Phon</li>
+                <li>Address</li>
+                <li>Email</li>
+            </ul>
+        </li>
+        <li class="dropbtn"><a href="#">About</a>
+            <ul class="dropdown">
+                <li>Phon</li>
+                <li>Address</li>
+                <li>Email</li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempora dolorem adipisci iste laboriosam et
+        fuga, odit, temporibus mollitia quas labore culpa officiis, reprehenderit assumenda facilis exercitationem
+        impedit molestiae at!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eum doloremque molestias sint reprehenderit ea
+        aperiam ipsam suscipit totam odio. Distinctio est aliquam, facere corporis soluta odio voluptate velit alias?
+        Exercitationem, adipisci non. Error, magnam. Dicta sit deserunt nemo quaerat. Cumque, blanditiis alias magnam
+        cupiditate accusamus, impedit adipisci rerum qui debitis aspernatur modi corrupti hic necessitatibus neque
+        mollitia ipsa! Omnis.
+        Ea debitis totam laudantium aspernatur quos. Accusantium, totam debitis voluptates eveniet doloremque cupiditate
+        eligendi? Officiis facere architecto modi temporibus deleniti, omnis soluta quod esse nisi eum deserunt
+        assumenda, inventore sed!
+        Voluptas, nesciunt maxime facere non odio cum velit earum dolores iure quis minima, similique aliquid repellat
+        eveniet. Exercitationem quas quam adipisci est dolores ipsa porro fuga corporis, qui, eos architecto!
+        Recusandae cupiditate facere debitis qui veniam quia eligendi praesentium laboriosam nemo ea at consectetur quo,
+        modi aut labore ex repellat maiores tempora eius aliquid! Qui voluptatem iure cum officiis dolor.
+        Ea et cupiditate incidunt nesciunt in reprehenderit corporis eos non dolores tempore rem, ducimus quis fuga
+        cumque laudantium ut illo labore quam hic! Quisquam ducimus ab mollitia doloribus porro non!
+        Tempora, itaque dolores maxime qui, possimus dignissimos, iure quas eum porro aliquid maiores eaque neque
+        placeat earum. Beatae adipisci rem id fugit nobis ducimus asperiores! Magni repudiandae quibusdam adipisci
+        tempore.
+        Aut nobis magnam quaerat fugit velit nesciunt, repudiandae nostrum. Similique consequatur voluptates enim,
+        dolorem ratione laudantium doloremque ipsa consectetur nulla, quasi ut, facilis aliquid neque placeat eius.
+        Molestias, nemo eligendi?
+        Ut quos iste ipsa aut vitae fugit eius inventore quam? Iste ex veritatis vitae recusandae quis fuga! Velit quod
+        voluptates labore neque modi, consequatur maxime autem. Et distinctio exercitationem accusamus.
+        Optio voluptatum aut modi iusto quia! Molestias, doloremque nemo? Dolorem at beatae est, nulla laudantium dolor
+        delectus harum repellendus reiciendis labore autem eaque molestiae officiis quibusdam vel sed, doloribus quidem.
+        Temporibus minus consectetur alias consequuntur animi quibusdam facere velit a, delectus harum incidunt tempore
+        sequi consequatur suscipit enim saepe deleniti quisquam, id, pariatur quo sed voluptate sunt debitis! Cum, in?
+        Doloribus eveniet soluta eaque non aliquam voluptate voluptas repudiandae sint pariatur, assumenda debitis ut
+        accusamus inventore natus et fuga quasi facere possimus totam animi maiores. Ea repellat impedit perferendis et!
+        Doloremque reiciendis debitis sint sapiente ducimus facere nostrum perspiciatis similique cupiditate veniam
+        laborum accusamus voluptatem eum voluptatum velit, sunt dolore enim possimus suscipit dignissimos? Quod esse
+        aspernatur accusamus quae natus.
+        Alias, exercitationem quisquam eligendi nesciunt excepturi nostrum modi deleniti quaerat placeat natus, sit
+        incidunt maiores molestias asperiores tenetur perferendis veritatis dolores aspernatur beatae provident veniam
+        voluptates dolor libero harum. Alias.
+        Id reiciendis vel asperiores harum nesciunt odit nobis iste cupiditate fuga ducimus necessitatibus animi
+        corporis, quibusdam aperiam est. Ab est impedit nam cumque ad, dolore quo aut officia consequuntur voluptate?
+        Optio iure accusamus perferendis debitis quam possimus, fugit quo error repellat commodi tempore corrupti
+        adipisci quos, nihil voluptates. Amet consectetur ipsa animi atque, laborum iusto repudiandae praesentium
+        veritatis sapiente ullam!
+        Eos rerum illum magni ipsum cumque. Vitae nulla doloremque distinctio nobis sed similique, reprehenderit, iste
+        esse quis impedit molestias tempora doloribus id eius suscipit laboriosam omnis maxime explicabo? Temporibus,
+        voluptatum?
+        Dicta vitae odio saepe aliquam aspernatur nulla dignissimos, illum blanditiis in officia, et explicabo
+        consequatur, quos iusto ipsam quae laudantium modi molestiae reprehenderit ut architecto optio praesentium.
+        Accusantium, ipsam vero?
+        Aliquid ullam reprehenderit est hic deleniti quas, suscipit pariatur in beatae qui, nulla similique numquam
+        tenetur quos, dolorum vitae nemo officiis architecto eum quaerat eos sequi sint cum quo! Accusantium.
+        Dicta eligendi libero adipisci incidunt harum vitae illo, repudiandae aliquid animi aliquam laudantium similique
+        iure hic asperiores ex ipsa? Ipsum exercitationem quidem magnam obcaecati eum suscipit cum reiciendis ab! Sequi!
+    </div>
+</body>
+
+</html>

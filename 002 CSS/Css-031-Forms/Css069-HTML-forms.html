@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        input {
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border-bottom: 1px solid #52cf9f;
+
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="text"]:focus {
+            border: none;
+            border-bottom: 3px solid blue;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #e1e1e1;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Using CSS to Style an HTML Forms</h3>
+    <div>
+        <form action="">
+            <!-- Input first name -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Please type your name here.">
+
+
+            <!-- Input last name -->
+            <label for="lname">Last name</label>
+            <input type="text" name="lastname" id="lname" placeholder="Please type your last name here.">
+
+            <!-- input your country -->
+            <label for="country">Country (choose your country from below list)</label>
+            <select name="country" id="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <!-- Submit your form -->
+            <input type="submit" name="submit" id="submit" value="Click here to sending your information">
+        </form>
+    </div>
+</body>
+
+</html>
