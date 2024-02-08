@@ -17,13 +17,19 @@
 
         input[type="text"],
         select {
-            width: 100%;
+            width: 30%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
             border-bottom: 1px solid #52cf9f;
-
             box-sizing: border-box;
+            transition: width 0.4s ease-in-out;
+        }
+
+        label {
+            clear: both;
+            display: table;
+
         }
 
         input[type="submit"] {
@@ -38,7 +44,9 @@
         }
 
         input[type="text"]:focus {
+
             border: none;
+            width: 100%;
             border-bottom: 3px solid blue;
         }
 
@@ -62,6 +70,7 @@
             <!-- Input last name -->
             <label for="lname">Last name</label>
             <input type="text" name="lastname" id="lname" placeholder="Please type your last name here.">
+
 
             <!-- input your country -->
             <label for="country">Country (choose your country from below list)</label>

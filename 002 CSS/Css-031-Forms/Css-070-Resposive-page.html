@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive forms</title>
+    <link rel="stylesheet" href="Css-070-style.css">
+</head>
+
+<body>
+    <h2>Responsive Forms</h2>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat harum, delectus, a veritatis
+        repellat sequi qui ipsa quisquam provident aspernatur suscipit dolor nemo quaerat quos quibusdam, dignissimos
+        neque voluptatum.</p>
+
+    <div class="container">
+        <form action="#">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="firstname" id="fname" placeholder="Please type your neame here">
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-25">
+                    <label for="lname">Last name</label>
+                </div>
+
+                <div class="col-75">
+                    <input type="text" name="lastname" id="lanem" placeholder="Please type your last name here.">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Select your country</label>
+                </div>
+
+                <div class="col-75">
+                    <select name="country" id="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Tell me your subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="subject" id="subject" style="height: 200px;"
+                        placeholder="Please type your subject here "></textarea>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="row">
+                <input type="submit" value="Click here to send yoru form">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
