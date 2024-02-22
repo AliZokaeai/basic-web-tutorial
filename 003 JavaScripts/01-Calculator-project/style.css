@@ -1,0 +1,95 @@
+@import url(_rest.css);
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: grey;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px rgb(199, 199, 199);
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+input#screen {
+  position: relative;
+  width: 90%;
+  height: 50px;
+  margin: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.contorl-btns {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  overflow: auto;
+  float: left;
+}
+.contorl-btns button {
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+  font-size: large;
+}
+.contorl-btns .guid-buttons {
+  text-align: right;
+  overflow: auto;
+  border-bottom: 1px solid black;
+  width: 80%;
+  float: left;
+}
+.contorl-btns .guid-buttons button#c-btn {
+  color: aliceblue;
+  background-color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.contorl-btns .guid-buttons button#ce-btn {
+  color: aliceblue;
+  background-color: rgb(224, 191, 4);
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1px;
+}
+.contorl-btns .guid-buttons button#backspace-btn {
+  color: aliceblue;
+  background-color: rgb(49, 142, 208);
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1px;
+}
+.contorl-btns .number-btns {
+  text-align: right;
+  overflow: auto;
+  float: left;
+  border-bottom: 1px solid black;
+  width: 80%;
+}
+.contorl-btns .number-btns .row {
+  margin: 5px 0;
+}
+.contorl-btns .number-btns {
+  text-align: right;
+  overflow: auto;
+  border-bottom: 1px solid black;
+  width: 80%;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
