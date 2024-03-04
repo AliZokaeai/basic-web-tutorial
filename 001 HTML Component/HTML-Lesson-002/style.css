@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: beige;
+}
+
+div.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    width: 1000px;
+    height: 350px;
+    background-color: aliceblue;
+    overflow: auto;
+    box-shadow: 0  0 5px 5px rgba(30,30,30,0.5);
+    padding: 50px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+div#text{
+    width: 60%;
+    float: left;
+    padding: 0 30px;
+}
+div#text h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom:10px;
+    font-size: 2em;
+}
+div#text p{
+    text-align: justify;
+    text-justify:inter-word;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+div#image{
+    height: 250px;
+    width: 35%;
+    background-color: rgb(53, 56, 59);
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 0 0 5px 2px rgba(40,40,40,0.5);
+}
+div#image p{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    font-size: 3em;
+    opacity: 0.5;
+    color:aliceblue;
+    translate: -50% -50%;
+}
+@media screen and (max-width:1000px){
+    div.container{
+        max-width: 700px;
+        box-sizing: border-box;
+        height: auto;
+        overflow: auto;
+        padding: 30px;
+        vertical-align: middle;
+       
+    }
+    
+    div#text{
+        width: 60%;
+        float: left;
+        top:50%;
+        margin-top: 10%;
+        margin-bottom: 10px;
+    }
+    div#text h2{
+        margin-bottom:5px;
+        font-size: 1em;
+    }
+    div#text p{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    div#image{
+        position: relative;
+        float: right;
+        height: 250px;
+        width:40%;
+        margin: 10px auto;
+        text-align: center;
+       
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    div.container{
+        max-width: 500px;
+        box-sizing: border-box;
+        height: auto;
+        overflow: auto;
+        padding: 20px;
+        vertical-align: middle;
+       
+    }
+    
+    div#text{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    div#text h2{
+        margin-bottom:5px;
+        font-size: 1em;
+    }
+    div#text p{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    div#image{
+        height: 250px;
+        width:90%;
+        margin: 10px auto;
+        text-align: center;
+        left:50px;
+        translate:-16%;
+       
+    }
+}
+
+@media screen and (max-width:400px){
+    div.container{
+        width: 250px;
+        height: auto;
+        overflow: auto;
+        padding: 5px;
+        vertical-align: middle;
+       
+    }
+    
+    div#text{
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+    }
+    div#text h2{
+        margin-bottom:5px;
+        font-size: 1em;
+    }
+    div#text p{
+        font-size: 1em;
+        line-height: 1em;
+    }
+    div#image{
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        width: 60%;
+        margin: 5px auto;
+        text-align: center;
+        background-color: aqua;
+       
+    }
+}
