@@ -1,71 +1,12 @@
-class defaultMap extends Map{
-    constructor(defaultValue){
-        super();
-        this.defaultValue = defaultValue;
+
+let table = new Array(10);
+for(let i = 0; i < table.length; i++) {
+    table[i] = new Array(10);
     }
-
-    get(key){
-        if(this.has(key)){
-            return super.get(key);
-        }
-        else{
-            return this.defaultValue;
-        }
-    }
-}
-
-
-class histogram{
-    constructor(){
-        this.letterCounts = new defaultMap(0);
-        this.totlaLetter = 0;
-    }
-    add(text){
-        text = text.replace(/\s/g,"").toUpperCase();
-
-        for(let character of text){
-            let count = this.letterCounts.get(character);
-            this.letterCounts.set(character, count+1);
-            this.totalLetters++;
-        }
-    }
-
-    toString(){
-        let entries = [...this.letterCounts];
-
-        entries.sort((a,b)=>{
-            if(a[1]===b[1]){
-                return a[0] < b[0]? -1:1;
-            }else{
-                return b[1] - a[1];
+    for(let row = 0; row < table.length; row++) {
+        for(let col = 0; col < table[row].length; col++) {
+            table[row][col] = row*col;
             }
-        });
-
-        for(let entry of entries){
-            entry[1] = entry[1] / this.totlaLetter*100
-        }
-
-        entries = entries.filter(entries =>entry[1]>=1);
-
-        let lines = entries.map(
-            ([l,n])=> `${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%`
-        );
-
-        return lines.join("\n");
     }
-}
-
-async function histogramFormStdin(){
-    process.ruction.stdin.setEncoing("utf-8");
-
-    let histogram = new Histogram();
-    for await (let chunk of process.stdin){
-        histogram.add(chunk);
-    }
-
-    return histogram;
-}
-
-histogramFormStdin().then(histogram=>{
-    console.log(histogram.toString());
-});
+console.log(table);
+console.log(table[5][7])
