@@ -1,12 +1,17 @@
+/* console.log(global);
+global.setTimeout(() => {
+    console.log('in the timeout');
+    clearInterval(int);
+}, 10000);
 
-let table = new Array(10);
-for(let i = 0; i < table.length; i++) {
-    table[i] = new Array(10);
-    }
-    for(let row = 0; row < table.length; row++) {
-        for(let col = 0; col < table[row].length; col++) {
-            table[row][col] = row*col;
-            }
-    }
-console.log(table);
-console.log(table[5][7])
+let timeCount = 0;
+const int = setInterval(()=>{
+    timeCount ++;
+    console.log(`${timeCount} in the interval`)
+    
+},1000)
+
+console.log(__dirname);
+console.log(__filename);
+
+console.log(document.querySelector);*/
