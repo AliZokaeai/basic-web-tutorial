@@ -1,38 +1,27 @@
-/*const decreaseBtn = document.getElementById("decreaseBtn");
-const resetBtn = document.getElementById("resetBtn");
-const increaseBtn = document.getElementById("increaseBtn");
-const countLabel = document.getElementById("countLabel");
+const myChackBox = document.getElementById("myCheckbox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
 
-let count = 0;
 
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
+
+mySubmit.onclick = function(){
+    if(myChackBox.checked){
+        subResult.textContent = `You are subscribed!`;
+    }else{
+        subResult.innerHTML = `You are<span style='color:red;'> not </span> subscribed!`;
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are payin with Visa.`;
+    }else if(masterCardBtn.checked){
+        paymentResult.textContent = `You are paying with MasterCard.`;
+    }else if(payPalBtn.checked){
+        paymentResult.textContent = `You are paying with PayPal.`;
+    }else{
+        paymentResult.innerHTML =`You <span style='color:red;font-weight:bold;'>must </span>select a payment type.`
+    }
 }
-
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
-}
-
-resetBtn.onclick = function(){
-    count=0;
-    countLabel.textContent = count;
-}
-//----------------------------------------------------------
-
-
-
-let x = 3.21;
-let y  = 2;
-let z;
-
-z = Math.pow(Math.sqrt(Math.tan(x)),Math.cos(2));
-
-console.log(z);
-
-//----------------------------------------------------------
-*/
-
-
-let age 

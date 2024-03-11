@@ -10,13 +10,25 @@
 </head>
 
 <body>
-  <label id="countLabel">0</label>
+  <input type="checkbox" id="myCheckbox">
+  <label for="myCheckbox">Subscribe</label><br><br>
 
-  <div class="btnsContainer">
-    <button id="decreaseBtn" class="buttons">Decrease</button>
-    <button id="resetBtn" class="buttons">Reset</button>
-    <button id="increaseBtn" class="buttons">Increase</button>
-  </div>
+  <!-- Radio Btns -->
+  <input type="radio" name="card" id="visaBtn">
+  <label for="visaBtn">Visa</label><br>
+
+  <input type="radio" name="card" id="masterCardBtn">
+  <label for="masterCardBtn">MasterCard</label><br>
+
+  <input type="radio" name="card" id="payPalBtn">
+  <label for="payPalBtn">PayPal</label><br>
+
+  <button type="submit" id="mySubmit">Submit</button> <br><br>
+
+  <p id="subResult"></p>
+  <p id="paymentResult"></p>
+
+
   <!-- https://youtu.be/lfmg-EJ8gm4?t=5519 -->
   <script src="script.js"></script>
 </body>
