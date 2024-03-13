@@ -1,34 +1,7 @@
-let day = 3;
-switch(day){
-    case 1:
-        console.log("It is Monday");
-        break;
-    case 2:
-    case 3:
-        console.log("It is Tuesday");
-        break;
+const temp = 20;
 
-    case 4:
-        console.log("It is Wednesday");
-        break;
-
-    case 4:
-        console.log("It is Thursday");
-        break;
-
-    case 5:
-        console.log("It is Friday");
-        break;
-
-    case 6:
-        console.log("It is Saturday");
-        break;
-
-    case 7:
-        console.log("It is Sunday");
-        break;
-
-    default:
-        console.log(`${day} isn't a day`);
-    
+if(temp >0 && temp <=30){
+    console.log("The weather is Good");
+}else{
+    console.log("The weather is Bad");
 }
