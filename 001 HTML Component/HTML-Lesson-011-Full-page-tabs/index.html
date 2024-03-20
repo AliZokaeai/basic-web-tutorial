@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Full page tabs</title>
+</head>
+
+<body>
+    <!-- Buttons -->
+    <button class="tablink" onclick="openPage('home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('news', this, 'green')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('contact', this, 'blue')">Contact</button>
+    <button class="tablink" onclick="openPage('about', this, 'orange')">About</button>
+
+
+    <!-- Pages -->
+    <div id="home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo sapiente, pariatur atque nulla debitis
+            minima nostrum earum, unde harum veritatis officiis tempora doloribus. Sit est maxime earum possimus! Earum,
+            placeat?</p>
+    </div>
+
+    <div id="news" class="tabcontent">
+        <h3>News</h3>
+        <p>News : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque debitis mollitia sunt
+            vitae. Accusamus sint laboriosam harum beatae consequatur. Ex dignissimos tempore reiciendis eveniet
+            voluptatem ducimus magni quod sunt!</p>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Contact : Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora laboriosam et
+            consequatur cupiditate molestiae perferendis consequuntur ipsum impedit provident, nobis quisquam maiores.
+            Ipsa doloremque tenetur voluptatum, hic dolore fugit?</p>
+    </div>
+
+    <div id="about" class="tabcontent">
+        <h3>About</h3>
+        <p>About : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta fugit consequuntur atque
+            iure temporibus quisquam, eos adipisci aut dolore itaque aliquam nobis a, voluptas, culpa explicabo dicta
+            quidem libero.</p>
+    </div>
+    <script src="scrtipt.js"></script>
+</body>
+
+</html>
