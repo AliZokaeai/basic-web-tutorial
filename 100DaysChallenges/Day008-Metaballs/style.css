@@ -34,7 +34,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(101deg);
+  transform: rotate(50deg);
 }
 .blubb-1:after {
   position: absolute;
@@ -55,7 +55,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(185deg);
+  transform: rotate(20deg);
 }
 .blubb-2:after {
   position: absolute;
@@ -76,7 +76,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(41deg);
+  transform: rotate(154deg);
 }
 .blubb-3:after {
   position: absolute;
@@ -97,7 +97,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(134deg);
+  transform: rotate(77deg);
 }
 .blubb-4:after {
   position: absolute;
@@ -118,7 +118,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(125deg);
+  transform: rotate(230deg);
 }
 .blubb-5:after {
   position: absolute;
@@ -139,7 +139,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(282deg);
+  transform: rotate(15deg);
 }
 .blubb-6:after {
   position: absolute;
@@ -160,7 +160,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(26deg);
+  transform: rotate(192deg);
 }
 .blubb-7:after {
   position: absolute;
@@ -181,7 +181,7 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  transform: rotate(290deg);
+  transform: rotate(106deg);
 }
 .blubb-8:after {
   position: absolute;
@@ -202,7 +202,7 @@
   left: 38px;
   width: 8px;
   height: 8px;
-  transform: rotate(160deg);
+  transform: rotate(230deg);
 }
 .sparkle-1:after {
   position: absolute;
@@ -223,7 +223,7 @@
   left: 38px;
   width: 9px;
   height: 9px;
-  transform: rotate(96deg);
+  transform: rotate(45deg);
 }
 .sparkle-2:after {
   position: absolute;
@@ -244,7 +244,7 @@
   left: 38px;
   width: 10px;
   height: 10px;
-  transform: rotate(291deg);
+  transform: rotate(13deg);
 }
 .sparkle-3:after {
   position: absolute;
@@ -265,7 +265,7 @@
   left: 38px;
   width: 11px;
   height: 11px;
-  transform: rotate(168deg);
+  transform: rotate(230deg);
 }
 .sparkle-4:after {
   position: absolute;
@@ -286,7 +286,7 @@
   left: 38px;
   width: 12px;
   height: 12px;
-  transform: rotate(41deg);
+  transform: rotate(28deg);
 }
 .sparkle-5:after {
   position: absolute;
@@ -307,7 +307,7 @@
   left: 38px;
   width: 13px;
   height: 13px;
-  transform: rotate(126deg);
+  transform: rotate(81deg);
 }
 .sparkle-6:after {
   position: absolute;
@@ -328,7 +328,7 @@
   left: 38px;
   width: 14px;
   height: 14px;
-  transform: rotate(22deg);
+  transform: rotate(67deg);
 }
 .sparkle-7:after {
   position: absolute;
@@ -349,7 +349,7 @@
   left: 38px;
   width: 15px;
   height: 15px;
-  transform: rotate(219deg);
+  transform: rotate(270deg);
 }
 .sparkle-8:after {
   position: absolute;
@@ -370,7 +370,7 @@
   left: 38px;
   width: 16px;
   height: 16px;
-  transform: rotate(297deg);
+  transform: rotate(22deg);
 }
 .sparkle-9:after {
   position: absolute;
@@ -391,7 +391,7 @@
   left: 38px;
   width: 17px;
   height: 17px;
-  transform: rotate(144deg);
+  transform: rotate(231deg);
 }
 .sparkle-10:after {
   position: absolute;

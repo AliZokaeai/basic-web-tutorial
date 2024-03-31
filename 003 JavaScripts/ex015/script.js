@@ -35,3 +35,5 @@ element.style.backgroundColor = "blue";
 
 const Elements = document.querySelectorAll(".fruits");
 Elements[2].style.backgroundColor = "yellow";
+
+//8:32:03
