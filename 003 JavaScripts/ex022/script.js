@@ -6,6 +6,12 @@ const resultDisplay = document.getElementById("resultDisplay");
 let winWords = "You Win...! yeh!";
 let loseWords = "You lost...! Try Again";
 let tieWords = "It's a tie! try Again";
+
+const playerScoreDisplay = document.getElementById("playerScoreDispaly");
+const computerScoreDispaly = document.getElementById("computerScoreDispaly");
+let playerScore = 0;
+let computerScore = 0;
+
 function playGame(playerChoise) {
   const computerChoice = choices[Math.floor(Math.random() * 3)];
   let result = "";
@@ -33,11 +39,15 @@ function playGame(playerChoise) {
       resultDisplay.classList.remove("loseWords");
       resultDisplay.classList.remove("tieWords");
       resultDisplay.classList.add("winWords");
+      playerScore++;
+      playerScoreDisplay.textContent = playerScore;
       breack;
     case loseWords:
       resultDisplay.classList.remove("tieWords");
       resultDisplay.classList.remove("winWords");
       resultDisplay.classList.add("loseWords");
+      computerScore++;
+      computerScoreDispaly.textContent = computerScore;
       breack;
     case tieWords:
       resultDisplay.classList.remove("loseWords");
@@ -46,3 +56,6 @@ function playGame(playerChoise) {
       breack;
   }
 }
+
+
+//10:18:12

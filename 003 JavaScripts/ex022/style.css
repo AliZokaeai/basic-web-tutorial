@@ -50,11 +50,17 @@ h1 {
   margin: 2px;
 }
 
-.winWords {
+.scoreDisplay {
+  font-size: 2rem;
+}
+
+.winWords,
+#playerScoreDispaly {
   color: green;
 }
 
-.loseWords {
+.loseWords,
+#computerScoreDispaly {
   color: red;
 }
 
