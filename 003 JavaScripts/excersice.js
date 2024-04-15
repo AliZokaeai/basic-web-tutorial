@@ -1,17 +1,6 @@
-/* console.log(global);
-global.setTimeout(() => {
-    console.log('in the timeout');
-    clearInterval(int);
-}, 10000);
+let a = { 0: "a", 1: "b", 2: "c", length: 3 };
 
-let timeCount = 0;
-const int = setInterval(()=>{
-    timeCount ++;
-    console.log(`${timeCount} in the interval`)
-    
-},1000)
-
-console.log(__dirname);
-console.log(__filename);
-
-console.log(document.querySelector);*/
+console.log(Array.prototype.join.call(a, "+"));
+console.log(Array.prototype.map.call(a, (x) => x.toUpperCase()));
+console.log(Array.prototype.slice.call(a, 0));
+console.log(Array.from(a));
