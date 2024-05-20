@@ -14,10 +14,20 @@
     <p id="demo"></p>
     <script>
         class Car {
-            constructor(name, yaer) {
+            constructor(name, year) {
+                this.class_name = name;
+                this.class_year = year;
 
             }
+
+            age() {
+                const date = new Date();
+                return date.getFullYear() - this.class_year;
+            }
         }
+
+        const myCar = new Car("Peycan", 2014);
+        document.getElementById("demo").innerHTML = "My car is " + myCar.age() + " years old";
     </script>
 </body>
 
