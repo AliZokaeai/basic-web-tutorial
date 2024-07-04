@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Objects in JavaScript</title>
 </head>
 
 <body>
-    <h1>JavaScript Class Methods</h1>
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using an object Literal</h2>
+
 
     <p id="demo"></p>
+    <p id="demo1"></p>
     <script>
-        let text = '{ "employees" : [' +
-            '{ "firstName":"John" , "lastName":"Doe" },' +
-            '{ "firstName":"Anna" , "lastName":"Smith" },' +
-            '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+       const car = {type:"Fiat", model:"500", color:"White"};
 
+       Object.preventExtensions(object);
 
-        const obj = JSON.parse(text);
-
-        document.getElementById("demo").innerHTML =
-            obj.employees[2].firstName + " " + obj.employees[2].lastName;
+    
     </script>
 </body>
 
