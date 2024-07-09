@@ -71,7 +71,7 @@
   width: 4px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 0.6s infinite;
+  animation: street 0.9s linear 0.7s infinite;
 }
 .card .front .street .stripe-2 {
   position: absolute;
@@ -81,7 +81,7 @@
   width: 6px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 0.9s linear 0.4s infinite;
+  animation: street 0.9s linear 0.6s infinite;
 }
 .card .front .street .stripe-3 {
   position: absolute;
@@ -91,7 +91,7 @@
   width: 8px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 1s infinite;
+  animation: street 1s linear 0.6s infinite;
 }
 .card .front .street .stripe-4 {
   position: absolute;
@@ -101,7 +101,7 @@
   width: 10px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 0.1s infinite;
+  animation: street 0.9s linear 0.9s infinite;
 }
 .card .front .street .stripe-5 {
   position: absolute;
@@ -111,7 +111,7 @@
   width: 12px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 0.5s infinite;
+  animation: street 1s linear 0.9s infinite;
 }
 .card .front .street .stripe-6 {
   position: absolute;
@@ -121,7 +121,7 @@
   width: 14px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 1s infinite;
+  animation: street 1s linear 0.1s infinite;
 }
 .card .front .street .stripe-7 {
   position: absolute;
@@ -131,7 +131,7 @@
   width: 16px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 0.7s infinite;
+  animation: street 0.9s linear 0.5s infinite;
 }
 .card .front .street .stripe-8 {
   position: absolute;
@@ -141,7 +141,7 @@
   width: 18px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 0.9s linear 0.3s infinite;
+  animation: street 1s linear 1s infinite;
 }
 .card .front .street .stripe-9 {
   position: absolute;
@@ -151,7 +151,7 @@
   width: 20px;
   background: #4B4841;
   border-radius: 3px;
-  animation: street 1s linear 1s infinite;
+  animation: street 0.9s linear 1s infinite;
 }
 .card .back {
   transform: rotateX(180deg);
@@ -176,30 +176,30 @@
   right: -25px;
   top: 34px;
   height: 3px;
-  width: 10.5px;
+  width: 22.9px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.7s linear 0.7s infinite;
+  animation: cloud 0.7s linear 0.4s infinite;
 }
 .card .back .sky .cloud-2 {
   position: absolute;
   right: -25px;
   top: 48px;
   height: 3px;
-  width: 10.2px;
+  width: 13.4px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.8s linear 0.4s infinite;
+  animation: cloud 0.8s linear 0.1s infinite;
 }
 .card .back .sky .cloud-3 {
   position: absolute;
   right: -25px;
   top: 62px;
   height: 3px;
-  width: 15.5px;
+  width: 24.9px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.7s linear 0.3s infinite;
+  animation: cloud 0.8s linear 0.1s infinite;
 }
 .card .back .sky .cloud-4 {
   position: absolute;
@@ -209,24 +209,24 @@
   width: 11.5px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.7s linear 1s infinite;
+  animation: cloud 0.8s linear 0.1s infinite;
 }
 .card .back .sky .cloud-5 {
   position: absolute;
   right: -25px;
   top: 90px;
   height: 3px;
-  width: 18px;
+  width: 17.6px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.7s linear 0.4s infinite;
+  animation: cloud 0.7s linear 0.3s infinite;
 }
 .card .back .sky .cloud-6 {
   position: absolute;
   right: -25px;
   top: 104px;
   height: 3px;
-  width: 16.5px;
+  width: 16.7px;
   background: #4B4841;
   border-radius: 3px;
   animation: cloud 0.7s linear 0.9s infinite;
@@ -236,30 +236,30 @@
   right: -25px;
   top: 118px;
   height: 3px;
-  width: 19.4px;
+  width: 14.7px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.8s linear 0.4s infinite;
+  animation: cloud 0.8s linear 0.9s infinite;
 }
 .card .back .sky .cloud-8 {
   position: absolute;
   right: -25px;
   top: 132px;
   height: 3px;
-  width: 17.4px;
+  width: 24.1px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.8s linear 0.2s infinite;
+  animation: cloud 0.7s linear 0.1s infinite;
 }
 .card .back .sky .cloud-9 {
   position: absolute;
   right: -25px;
   top: 146px;
   height: 3px;
-  width: 15.6px;
+  width: 15px;
   background: #4B4841;
   border-radius: 3px;
-  animation: cloud 0.8s linear 0.5s infinite;
+  animation: cloud 0.8s linear 0.2s infinite;
 }
 
 @keyframes bike {

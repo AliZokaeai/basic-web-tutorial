@@ -24,27 +24,22 @@ h1 {
   /*nopseduoneeded*/
   --k: 0;
   place-self: center;
-  background: linear-gradient(
-    90deg,
-    hsl(calc(var(--k) * 1turn), 95%, 65%),
-    hsl(calc(var(--k) * 1turn + 90deg), 95%, 65%)
-  );
+  background: linear-gradient(90deg, hsl(calc(var(--k) * 1turn), 95%, 65%), hsl(calc(var(--k) * 1turn + 90deg), 95%, 65%));
   -webkit-bacground-clip: text;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   font: 900 clamp(0.875em, 7.25vw, 5em) arial black, sans-serif;
   filter: url(#f);
   -webkit-filter: url(#f);
   text-align: center;
   text-transform: uppercase;
-  animation: k 2s linear infinite;
-  -webkit-animation: k 2s linear infinite;
+  animation: k 4s linear infinite;
+  -webkit-animation: k 4s linear infinite;
 }
 
 @keyframes k {
   to {
-    --k: 1;
+    --k:1;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
