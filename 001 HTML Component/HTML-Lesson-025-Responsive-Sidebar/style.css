@@ -1,10 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "lato", sans-serif;
 }
 
-.active{
-    background-color: ;
+.active {
+  background-color: green;
+  color: white !important;
 }
 
 .sidebar {
@@ -40,8 +42,9 @@ div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
+  width: 700px;
 }
-@media screen and(max-width:700px) {
+@media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -49,13 +52,24 @@ div.content {
   }
   .sidebar a {
     float: left;
-    div.content {
-      margin-left: 0;
-    }
+  }
+  div.content {
+    width: 500px;
+    margin: auto;
+    padding: 10px 20px;
+    text-align: justify;
   }
 }
+
 @media screen and (max-width: 400px) {
   .sidebar a {
+    text-align: center;
     float: none;
+  }
+  div.content {
+    width: 250px;
+    margin: auto;
+    padding: 10px 20px;
+    text-align: justify;
   }
 }
