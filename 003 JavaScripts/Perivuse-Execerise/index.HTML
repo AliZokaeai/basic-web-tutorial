@@ -6,8 +6,54 @@
 </head>
 
 <body>
-    <script async src="script.js"></script>
+    <script>
+        let eligible = false;
+        let required = true;
+
+        console.log(!eligible);
+        console.log(!required);
+
+        console.log("***");
+
+        console.log(!undefined);
+        console.log(!null);
+        console.log(!20);
+        console.log(!0);
+        console.log(!NaN);
+        console.log(!{});
+        console.log(!'');
+        console.log(!'OK');
+        console.log(!false);
+        console.log(!true);
+
+        console.log("***");
+
+        console.log(!!undefined);
+        console.log(!!null);
+        console.log(!!20);
+        console.log(!!0);
+        console.log(!!NaN);
+        console.log(!!{});
+        console.log(!!'');
+        console.log(!!'OK');
+        console.log(!!false);
+        console.log(!!true);
+
+        console.log("***");
+        eligible = true;
+        required = true;
+        console.log(eligible && required);
+
+        console.log("***");
+        let b = false;
+        let result = b && (1 / 0);
+        console.log(result);
+
+
+    </script>
+
+
 </body>
-<a href="https://www.javascripttutorial.net/javascript-data-types/">my lesson</a>
+
 
 </html>
