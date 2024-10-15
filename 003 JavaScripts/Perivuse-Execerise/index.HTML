@@ -7,48 +7,29 @@
 
 <body>
     <script>
-        let eligible = false;
-        let required = true;
+        function square(x) {
+            x = x * x;
+            return x;
+        }
 
-        console.log(!eligible);
-        console.log(!required);
+        let y = 10;
+        let result = square(y)
 
-        console.log("***");
-
-        console.log(!undefined);
-        console.log(!null);
-        console.log(!20);
-        console.log(!0);
-        console.log(!NaN);
-        console.log(!{});
-        console.log(!'');
-        console.log(!'OK');
-        console.log(!false);
-        console.log(!true);
-
-        console.log("***");
-
-        console.log(!!undefined);
-        console.log(!!null);
-        console.log(!!20);
-        console.log(!!0);
-        console.log(!!NaN);
-        console.log(!!{});
-        console.log(!!'');
-        console.log(!!'OK');
-        console.log(!!false);
-        console.log(!!true);
-
-        console.log("***");
-        eligible = true;
-        required = true;
-        console.log(eligible && required);
-
-        console.log("***");
-        let b = false;
-        let result = b && (1 / 0);
         console.log(result);
+        console.log(y);
 
+
+        let person = {
+            name: 'John',
+            age: 25,
+        };
+
+        function increaseAge(obj) {
+            obj.age += 1;
+        }
+        console.log(person);
+        increaseAge(person);
+        console.log(person);
 
     </script>
 
