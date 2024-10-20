@@ -6,35 +6,69 @@
 </head>
 
 <body>
-    <script>
-        function square(x) {
-            x = x * x;
-            return x;
-        }
+    <!DOCTYPE html>
+    <html>
 
-        let y = 10;
-        let result = square(y)
+    <body>
+        <script>
 
-        console.log(result);
-        console.log(y);
+            // class Person {
+            //     #firstName;
+            //     #lastName;
+            //     constructor(firstName, lastName) {
+            //         this.#firstName = firstName;
+            //         this.#lastName = lastName;
+            //     }
+            //     getFullName(format = true) {
+            //         return format ? this.#firstLast() : this.#lastFirst();
+            //     }
+
+            //     #firstLast() {
+            //         return `${this.#firstName} ${this.#lastName}`;
+
+            //     }
+
+            //     #lastFirst() {
+            //         return `${this.#lastName}, ${this.#firstName}`;
+            //     }
+            // }
+
+            class Person {
+                #firstName;
+                #lastName;
+                constructor(firstName, lastName) {
+                    this.#firstName = Person.#validate(firstName);
+                    this.#lastName = Person.#validate(lastName);
+                }
+                getFullName(format = true) {
+                    return format ? this.#firstLast() : this.#lastFirst();
+                }
+                static #validate(name) {
+                    if (typeof name === 'string') {
+                        let str = name.trim();
+                        if (str.length >= 3) {
+                            return str;
+                        }
+                    }
+                    throw 'The name must be a string with at least 3 characters';
+                }
+
+                #firstLast() {
+                    return `${this.#firstName} ${this.#lastName}`;
+                }
+                #lastFirst() {
+                    return `${this.#lastName}, ${this.#firstName}`;
+                }
+            }
+
+            let person = new Person('John', 'Doe');
+            console.log(person.getFullName());
+        </script>
 
 
-        let person = {
-            name: 'John',
-            age: 25,
-        };
-
-        function increaseAge(obj) {
-            obj.age += 1;
-        }
-        console.log(person);
-        increaseAge(person);
-        console.log(person);
-
-    </script>
 
 
-</body>
+    </body>
 
 
-</html>
+    </html>
