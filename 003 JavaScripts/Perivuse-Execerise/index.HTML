@@ -11,62 +11,53 @@
 
     <body>
         <script>
-
-            // class Person {
-            //     #firstName;
-            //     #lastName;
-            //     constructor(firstName, lastName) {
-            //         this.#firstName = firstName;
-            //         this.#lastName = lastName;
-            //     }
-            //     getFullName(format = true) {
-            //         return format ? this.#firstLast() : this.#lastFirst();
+            //     function Box(height, width) {
+            //         this.height = height;
+            //         this.width = width;
             //     }
 
-            //     #firstLast() {
-            //         return `${this.#firstName} ${this.#lastName}`;
-
+            //     function Widget(height, width, color) {
+            //         Box.call(this, height, width);
+            //         this.color = color;
             //     }
+            //     let widget = new Widget('red', 100, 200);
 
-            //     #lastFirst() {
-            //         return `${this.#lastName}, ${this.#firstName}`;
-            //     }
-            // }
+            //     console.log(widget);
+            const car = {
+                name: 'car',
+                start() {
+                    console.log('Start the ' + this.name);
+                },
+                speedUp() {
+                    console.log('Speed up the ' + this.name);
+                },
+                stop() {
+                    cosole.log('Stop the ' + this.name);
+                },
+            };
 
-            class Person {
-                #firstName;
-                #lastName;
-                constructor(firstName, lastName) {
-                    this.#firstName = Person.#validate(firstName);
-                    this.#lastName = Person.#validate(lastName);
-                }
-                getFullName(format = true) {
-                    return format ? this.#firstLast() : this.#lastFirst();
-                }
-                static #validate(name) {
-                    if (typeof name === 'string') {
-                        let str = name.trim();
-                        if (str.length >= 3) {
-                            return str;
-                        }
-                    }
-                    throw 'The name must be a string with at least 3 characters';
-                }
+            const aircraft = {
+                name: 'aircraft',
+                fly() {
+                    console.log('Fly');
+                },
+            };
 
-                #firstLast() {
-                    return `${this.#firstName} ${this.#lastName}`;
-                }
-                #lastFirst() {
-                    return `${this.#lastName}, ${this.#firstName}`;
-                }
+            car.start.call(aircraft);
+            car.speedUp.call(aircraft);
+            aircraft.fly();
+
+            function isOdd(number) {
+                return number % 2;
             }
 
-            let person = new Person('John', 'Doe');
-            console.log(person.getFullName());
+            function getOddNumer() {
+                return Array.prototype.filter.call(arguments, isOdd);
+            }
+
+            let results = getOddNumer(10, 1, 3, 4, 8, 9);
+            console.log(results);
         </script>
-
-
-
 
     </body>
 
