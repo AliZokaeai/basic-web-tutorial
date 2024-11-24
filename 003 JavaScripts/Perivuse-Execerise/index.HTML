@@ -10,14 +10,11 @@
     <html>
 
     <body>
-        <h1>JavaScript</h1>
-
-        <button id="btn">Click Me!</button>
-        <p id="demo"></p>
+        <input type="text" name="username" id="username" placeholder="Enter a username">
+        <div id="greeting"></div>
         <script>
-            let x = 15 * 5;
-            debugger;
-            document.getElementById("demo").innerHTML = x;
+            var showNumbers = new Function('...numbers', 'console.log(numbers)');
+            showNumbers(1, 2, 3)
         </script>
 
     </body>
