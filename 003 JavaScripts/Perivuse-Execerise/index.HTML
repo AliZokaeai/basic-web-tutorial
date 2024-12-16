@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html>
 
-    <body>
-        <input type="text" name="username" id="username" placeholder="Enter a username">
-        <div id="greeting"></div>
-        <script>
-            var showNumbers = new Function('...numbers', 'console.log(numbers)');
-            showNumbers(1, 2, 3)
-        </script>
+    <input type="text" name="username" id="username" placeholder="Enter a user name">
+    <div id="greeting"></div>
 
-    </body>
+    <script>
+        function sum() {
+            return Array.prototype.filter
+                .call(arguments, function (e) {
+                    return typeof e === 'number';
+                })
+                .reduce(function (prev, curr) {
+                    return prev + curr;
+                });
+        }
+        let result = sum(10, 'Hi', null, undefined, 20);
+        console.log(result);
 
+    </script>
+</body>
 
-    </html>
+</html>
