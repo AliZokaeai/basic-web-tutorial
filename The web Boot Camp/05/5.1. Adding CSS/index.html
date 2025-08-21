@@ -3,36 +3,40 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Adding CSS</title>
+  <title>Colors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
-    a {
-      display: block;
-      padding: 5px;
-      text-decoration: none;
-      background-color: brown;
-      color: antiquewhite;
-      width: 10%;
-      margin: 10px;
-      text-align: center;
-      font-size: large;
-      transition: 500ms;
+    body {
+      background-color: black;
     }
 
-    a:hover {
-      background-color: burlywood;
-      color: brown;
-      font-weight: bolder;
+    h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+    }
 
+    .poster {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 100px;
+      color: white;
+      font-family: "Liber Baskerville", serif;
+      text-align: center;
+    }
+
+    .motivation-img {
+      border: 5px solid white;
+      width: 100%;
     }
   </style>
 </head>
 
 <body>
-  <h1>Three Methods of Adding CSS</h1>
-  <!-- Create 3 Links to The 3 Webpages: inline, internal and external -->
-  <a href="inline.html">In line CSS</a>
-  <a href="internal.html">Interlan CSS</a>
-  <a href="external.html">external CSS</a>
+  <div class="poster">
+    <img src="./assets/image/daenerys.jpeg" alt="danerys with egg" class="motivation-img">
+    <h1>That Special Moment</h1>
+    <p>When you fint the perfect avocado at the supermarket</p>
+  </div>
 </body>
 
 </html>
