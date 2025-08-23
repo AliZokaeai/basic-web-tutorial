@@ -4,57 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Flag Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .flag {
-      width: 900px;
-      height: 600px;
-      position: relative;
-      background-color: #CE1126;
-
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 50px 50px 0 50px;
+      background-color: #faf9f6;
+      display: flex;
+      flex-direction: column;
+      min-height: 95vh;
     }
 
-    .flag>div {
-      background-color: #002868;
-      height: 300px;
-      width: 100%;
-      position: absolute;
-      top: 150px;
+    .main {
+      flex: 1;
     }
 
-    .flag>div>div {
-      background-color: white;
-      position: absolute;
-
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      top: 50px;
-      left: 350px;
-    }
-
-    p {
+    h1 {
       font-size: 5rem;
-      color: white;
-      text-align: center;
-      padding: 0;
-      margin: 0;
     }
 
-    .flag>div div p {
-      color: black;
+    footer {
+      text-align: right;
+      color: midnightblue;
+    }
+
+    .tile-image {
+      height: 200px;
+      float: left;
+      margin-right: 50px;
+    }
+
+    .card {
+      width: 45%;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .creative {
+      color: midnightblue;
+    }
+
+    @media (max-width: 680px) {
+      .logo {
+        width: 100px;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+
+      .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
-      </div>
+  <div class="main">
+    <img src="./assets/image/daenerys.jpeg" alt="" class="logo" width="100px">
+    <h1>We are a creative design angency</h1>
+    <div class="left card">
+      <img src="./assets/image/daenerys.jpeg" alt="" class="tile-image" width="100px">
+      <h2 class="card-title">Beauty</h2>
+      <p class="card-text">We strive to create the most beautiul websites for all you needs. Working closely with you to
+        design and develop an amazing website for your business.</p>
+    </div>
+
+    <div class="right card">
+      <img src="./assets/image/daenerys.jpeg" alt="" class="tile-image" width="100px">
+      <h2 class="card-text">Construction</h2>
+      ]<p>Built by our team of professional developers, we ensure the most rigourous and modern website. Built from
+        scratch using HTML and CSS. Only the best for you.</p>
     </div>
   </div>
+  <footer>
+    <p>Create. Develop. Design.</p>
+  </footer>
 </body>
 
 </html>
