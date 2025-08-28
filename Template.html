@@ -1,48 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .input-focus:focus {
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.5);
+        }
+        .shake {
+            animation: shake 0.5s;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-5px); }
+            40%, 80% { transform: translateX(5px); }
+        }
+    </style>
 </head>
-<body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<body class="min-h-screen flex items-center justify-center gradient-bg p-4">
+    <div class="w-full max-w-md">
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <!-- Header -->
+            <div class="bg-indigo-600 py-6 px-8 text-center">
+                <h1 class="text-2xl font-bold text-white">Welcome Back</h1>
+                <p class="text-indigo-200 mt-1">Sign in to your account</p>
+            </div>
+            
+            <!-- Form -->
+            <form id="loginForm" class="p-8">
+                <!-- Email Field -->
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-envelope text-gray-400"></i>
+                        </div>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="w-full pl-10 pr-3 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-500 input-focus transition duration-200" 
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </div>
+                    <p id="emailError" class="text-red-500 text-xs mt-1 hidden">Please enter a valid email address</p>
+                </div>
+                
+                <!-- Password Field -->
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-lock text-gray-400"></i>
+                        </div>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="w-full pl-10 pr-10 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-500 input-focus transition duration-200" 
+                            placeholder="••••••••"
+                            required
+                            minlength="6"
+                        >
+                        <button 
+                            type="button" 
+                            id="togglePassword" 
+                            class="absolute inset-y-0 right-0 pr-3 flex items-center"
+                        >
+                            <i class="fas fa-eye text-gray-400 hover:text-indigo-600 cursor-pointer"></i>
+                        </button>
+                    </div>
+                    <p id="passwordError" class="text-red-500 text-xs mt-1 hidden">Password must be at least 6 characters</p>
+                </div>
+                
+                <!-- Remember & Forgot -->
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <input 
+                            id="remember" 
+                            type="checkbox" 
+                            class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                        >
+                        <label for="remember" class="ml-2 block text-sm text-gray-700">Remember me</label>
+                    </div>
+                    <a href="#" class="text-sm text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+                </div>
+                
+                <!-- Submit Button -->
+                <button 
+                    type="submit" 
+                    id="submitBtn"
+                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                    Sign In
+                </button>
+                
+                <!-- Social Login -->
+                <div class="mt-6">
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-white text-gray-500">Or continue with</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 grid grid-cols-2 gap-3">
+                        <button 
+                            type="button"
+                            class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                            <i class="fab fa-google text-red-500 mr-2"></i> Google
+                        </button>
+                        <button 
+                            type="button"
+                            class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                            <i class="fab fa-facebook-f text-blue-600 mr-2"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            <!-- Footer -->
+            <div class="bg-gray-50 px-8 py-6 text-center">
+                <p class="text-gray-600 text-sm">
+                    Don't have an account? 
+                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            const togglePassword = document.getElementById('togglePassword');
+            const emailError = document.getElementById('emailError');
+            const passwordError = document.getElementById('passwordError');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Toggle password visibility
+            togglePassword.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    icon.classList.replace('fa-eye', 'fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    icon.classList.replace('fa-eye-slash', 'fa-eye');
+                }
+            });
+            
+            // Email validation
+            emailInput.addEventListener('input', function() {
+                if (this.validity.valid) {
+                    emailError.classList.add('hidden');
+                    this.classList.remove('border-red-500');
+                    this.classList.add('border-gray-300');
+                } else {
+                    emailError.classList.remove('hidden');
+                    this.classList.add('border-red-500');
+                    this.classList.remove('border-gray-300');
+                }
+            });
+            
+            // Password validation
+            passwordInput.addEventListener('input', function() {
+                if (this.value.length >= 6 || this.value.length === 0) {
+                    passwordError.classList.add('hidden');
+                    this.classList.remove('border-red-500');
+                    this.classList.add('border-gray-300');
+                } else {
+                    passwordError.classList.remove('hidden');
+                    this.classList.add('border-red-500');
+                    this.classList.remove('border-gray-300');
+                }
+            });
+            
+            // Form submission
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Check validity
+                let isValid = true;
+                
+                if (!emailInput.validity.valid) {
+                    emailError.classList.remove('hidden');
+                    emailInput.classList.add('border-red-500');
+                    emailInput.classList.remove('border-gray-300');
+                    isValid = false;
+                }
+                
+                if (passwordInput.value.length < 6) {
+                    passwordError.classList.remove('hidden');
+                    passwordInput.classList.add('border-red-500');
+                    passwordInput.classList.remove('border-gray-300');
+                    isValid = false;
+                }
+                
+                if (!isValid) {
+                    loginForm.classList.add('shake');
+                    setTimeout(() => {
+                        loginForm.classList.remove('shake');
+                    }, 500);
+                    return;
+                }
+                
+                // Simulate form submission
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Signing in...';
+                
+                // In a real app, you would send the data to your server here
+                setTimeout(() => {
+                    alert('Login successful! (This is a demo)');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Sign In';
+                }, 1500);
+            });
+        });
+    </script>
 </body>
 </html>
