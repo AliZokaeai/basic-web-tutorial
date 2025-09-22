@@ -4,54 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Text Glow</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-    <style>
-        h1 {
-            font-family: "Sofia", sans-serif;
-            font-size: 30px;
-        }
-
-        div {
-            height: 30vh;
-            background-color: gainsboro;
-        }
-
-        p {
-
-            font-size: 2vw;
-        }
-
-        p::selection {
-            background-color: yellow;
-            text-decoration: underline blue wavy 3px;
-    </style>
-
+    <title>Document</title>
 </head>
+<style>
+    ol {
+        background-color: salmon;
+        padding: 20px;
+    }
+
+    ol li {
+        background-color: mistyrose;
+        color: darkerd;
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    ul {
+        background-color: powderblue;
+        padding: 20px;
+    }
+
+    ul li {
+        background-color: mistyrose;
+        color: darkblue;
+        margin: 5px;
+    }
+
+    th,
+    td {
+        border: 1px solid;
+    }
+
+    table {
+        border: 3px solid blue;
+    }
+</style>
 
 <body>
+    <h1>Styling List with Colors, Margin and Padding</h1>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
 
-    <h1>Lorem, ipsum.</h1>
-    <div>
-        <p>
-            This is some text that will not wrap. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-            itaque, laboriosam, similique deserunt aliquam libero nemo impedit commodi corporis maiores exercitationem
-            assumenda mollitia voluptatem velit nisi asperiores voluptatibus ab distinctio!
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-            This is some text that will not wrap.
-        </p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
 
-        <p>Try to remove the white-space property to see the difference!</p>
-    </div>
+    <!--  -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
