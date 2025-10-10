@@ -487,8 +487,10 @@ body {
   height: 1rem;
   width: 1rem;
   margin-right: 0.7rem;
+  background-image: url(../img/chevron-thin-right.svg);
+  background-size: cover;
 }
-@supports (-webkit-mask-image: url(../img/chevron-thin-right.svg)) or (mask-image: url()) {
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
   .list__item::before {
     background-color: var(--color-primary);
     -webkit-mask-image: url(../img/chevron-thin-right.svg);
@@ -639,4 +641,4 @@ body {
   animation: pulsate 1s infinite;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.comp.css.map */
