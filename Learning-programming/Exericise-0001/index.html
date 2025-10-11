@@ -6,61 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .clearfix {
-            margin: auto 10%;
-            background-color: orange;
-            max-width: 100%;
-
-        }
-
-        .box {}
-
-        .box:not(:last-child) {
-            float: left;
-            min-width: 33.33%;
-            padding: 50px;
-            margin: auto;
-        }
-
-        .box:last-child {
-            clear: both;
-            max-width: 33.33%;
-
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+        p:nth-child(2):hover {
+            background-color: red;
+            color: white
         }
     </style>
 </head>
 
 <body>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, totam.</p>
-    <div class="clearfix">
-        <div class="box" style="background-color: #bbb;">
-            <img src="images/pineapple.jpg" alt="" width="100%">
-        </div>
-        <div class="box" style="background-color: #ddd;">
-            <img src="images/pineapple.jpg" alt="" width="100%">
-        </div>
-        <div class="box" style="background-color: #eee;">
-            <img src="images/pineapple.jpg" alt="" width="100%">
-        </div>
-        <div class="box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam voluptas ut nemo possimus, quisquam
-                accusamus veritatis inventore non magni enim perferendis iusto odit, dolorem quo quae tempore sint aut.
-            </p>
-        </div>
+    <div>
+        <p>Lorem ipsum dolor <em>sit</em> ame <em>lrad</em>t.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
     </div>
-
-
 
 </body>
 
