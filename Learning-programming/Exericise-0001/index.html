@@ -6,20 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p:nth-child(2):hover {
-            background-color: red;
-            color: white
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url(images/dice1.png);
+            background-size: 35px 35px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: all 1s;
+        }
+
+        input[type=text]:hover {
+            background-size: 10px 10px;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <p>Lorem ipsum dolor <em>sit</em> ame <em>lrad</em>t.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+    <form action="">
+        <label for="fnam">Fist name</label>
+        <input type="text" id="fnam" name="first name" placeholder=" you name">
+        <label for="lnam">Fist name</label>
+        <input type="text" id="lnam" name="first name" placeholder=" you name">
 
+    </form>
 </body>
 
 </html>
