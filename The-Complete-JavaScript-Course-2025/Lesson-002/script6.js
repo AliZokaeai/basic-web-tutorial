@@ -1,17 +1,24 @@
-const jonas = {
-  firstName: "Ali",
-  lastName: "Zokaeai",
-  birthYear: 1991,
-  job: "teacher",
-  firends: ["Michael", "Peter", "Steven"],
-  hasDriverLicence: true,
-  //   calcAge: function (birthYear) {
-  //     return 2025 - birthYear;
-  //   },
-
-  calcAge: function () {
-    return 2025 - this.birthYear;
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
   },
 };
 
-console.log(jonas.calcAge());
+const john = {
+  fullName: "Jhon Smith",
+  mass: 92,
+  height: 1.92,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+john.calcBMI();
+console.log(mark.bmi);
+console.log(john.bmi);
