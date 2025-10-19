@@ -3,38 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input {
-            width: 100%;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: white;
-            background-image: url(images/dice1.png);
-            background-size: 35px 35px;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
-            transition: all 1s;
+        *,
+        *:focus {
+            border: none;
         }
 
-        input[type=text]:hover {
-            background-size: 10px 10px;
+        form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type=text],
+        input[type=password],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: all .5s;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        select:focus {
+            outline: none;
+            border: 10px solid transparent;
+            border-image: url(../../Images/img_5terre.jpg) 10;
+
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 
 <body>
-    <form action="">
-        <label for="fnam">Fist name</label>
-        <input type="text" id="fnam" name="first name" placeholder=" you name">
-        <label for="lnam">Fist name</label>
-        <input type="text" id="lnam" name="first name" placeholder=" you name">
+
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, natus?</p>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+        <label for="lname">Last Name</label>
+        <input type="password" name="lastname" id="lname" placeholder="Your last name...">
+
+        <label for="country">county</label>
+        <select name="country" id="country">
+            <option value="australia">Australir</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+
+        <input type="submit" value="Submit">
 
     </form>
+
 </body>
 
 </html>
