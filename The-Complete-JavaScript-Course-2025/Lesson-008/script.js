@@ -41,6 +41,162 @@ const resturant = {
     console.log('Other Ingredient: ', otherIngridients);
   },
 };
+
+const question = new Map([
+  ['question', 'What is the best programming langauge in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct ✅'],
+  [false, 'Try again! ❌'],
+]);
+
+console.log('Question Map:', question);
+
+console.log('Convert Object to Map:', Object.entries(openingHours));
+
+const hoursMap = new Map(Object.entries(openingHours));
+
+console.log('A Map of an Object:', hoursMap);
+
+console.log('Question:', question.get('question'));
+
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}:${value}`);
+}
+
+// const answer = prompt('You answer between (1 to 3)(just on select allowed)');
+// console.log('The user answer is:', answer);
+
+//console.log(question.get(question.get('correct') == answer));
+//Covert map to array
+
+console.log('Covert Map to Array:', [...question]);
+console.log('Map Entries:', question.entries());
+console.log('Map Keys:', [...question.keys()]);
+console.log('Map Values:', [...question.values()]);
+
+/*
+
+const rest = new Map();
+console.log('Empty Map:', rest);
+
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenze, Italy');
+console.log('Set the new items in Map:', rest.set(2, 'Lisbon, Portugal'));
+
+rest
+  .set('categories', ['Italian', 'Pizzeria', 'Vegeterian', 'Organic'])
+  .set('Open', 11)
+  .set('close', 23)
+  .set(true, 'We are Open :D')
+  .set(false, 'We are closed :(');
+
+console.log('get the Name of Map:', rest.get('name'));
+console.log('get the True of Map:', rest.get(true));
+console.log('get the 1 of Map:', rest.get(1));
+
+const time = 8;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+console.log("Map has 'categoires' item", rest.has('categories'));
+rest.delete(2);
+console.log("Map after delete '2' itme:", rest);
+console.log('Size of Map:', rest.size);
+const arry = [1, 2];
+rest.set(arry, 'Test');
+console.log('Map after add the Array:', rest);
+console.log('Size of map after add the Array:', rest.size);
+console.log('Get Array itme of map:', rest.get(arry));
+
+rest.set(document.querySelector('h1'), 'Heading');
+console.log('The Element of Page in Map:', rest);
+
+const italianFoods = new Set([
+  'pasta',
+  'goncchi',
+  'tomatoes',
+  'olive oil',
+  'gralic',
+  'basil',
+]);
+
+const mexicanFoods = new Set([
+  'tortillas',
+  'beans',
+  'tomatoes',
+  'avocado',
+  'gralic',
+]);
+
+const commonFoods = italianFoods.intersection(mexicanFoods);
+
+console.log('Intersection of CommonFoods:', commonFoods);
+console.log('Intersection of CommonFoods:', commonFoods);
+
+const italianMexiacanFusion = italianFoods.union(mexicanFoods);
+
+console.log(
+  'Union of Italian and Mexican Foods (Withour Dublicated items):',
+  italianMexiacanFusion
+);
+console.log('Union of Italian and Mexican Foods (With Duplicated items):', [
+  ...italianFoods,
+  ...mexicanFoods,
+]);
+console.log(
+  'Union Array of Italian and Mexican Foods (Without Duplicated items):',
+  new Set([...italianFoods, ...mexicanFoods])
+);
+
+const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
+console.log('Difference Italian foods items:', uniqueItalianFoods);
+
+const unique_Mexican_Foods = mexicanFoods.difference(italianFoods);
+console.log('Difference Mexican foods items:', unique_Mexican_Foods);
+
+const unique_Italian_and_Mexican_foods =
+  italianFoods.symmetricDifference(mexicanFoods);
+
+console.log('Symmertic Difference Set: ', unique_Italian_and_Mexican_foods);
+console.log('DisjointForm:', italianFoods.isDisjointFrom(mexicanFoods));
+
+
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pasta',
+]);
+
+
+console.log('The Set:', ordersSet);
+
+console.log('The string:', new Set('Jonas'));
+console.log('The size of ordersSet:', ordersSet.size);
+console.log('Check a item (Pizza):', ordersSet.has('Pizza'));
+console.log('Check a item (Bread):', ordersSet.has('Bread'));
+
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Risotto');
+console.log('Check the new Set:', ordersSet);
+// ordersSet.clear();
+
+for (const order of ordersSet) console.log('Order Item:', order);
+
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+
+// const staffUnique = new Set(staff);
+const staffUnique = [...new Set(staff)];
+console.log('The Staff Unique Items:', staffUnique);
+
+console.log('The Size of String Set:', new Set('AliZokaeaiDehaghani').size);
+
+
 const peroperties = Object.keys(openingHours);
 console.log(peroperties);
 
@@ -59,7 +215,7 @@ console.log(entries);
 for (const [key, { open, close }] of entries) {
   console.log(`on ${key} we open at ${open} and ${close};`);
 }
-/*
+
 if (resturant.openingHours && resturant.openingHours.fri)
   console.log(resturant.openingHours.fri.open);
 
