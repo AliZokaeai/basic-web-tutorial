@@ -148,6 +148,15 @@ btnLogin.addEventListener('click', function (e) {
   }
 });
 
+btnTransfer.addEventListener('click', function (e) {
+  e.preventDefault();
+  const amount = Number(inputTransferAmount.value);
+  const receuverAcc = account.find(
+    acc => acc.username === inputTransferTo.value
+  );
+  console.log('Transfer Amoutn:', amount, 'Reciver Account:', receuverAcc);
+});
+
 const calcDisplayBalance = function (movements) {
   const balance = movements.reduce((acc, mov) => acc + mov, 0);
   labelBalance.textContent = `${balance}`;
