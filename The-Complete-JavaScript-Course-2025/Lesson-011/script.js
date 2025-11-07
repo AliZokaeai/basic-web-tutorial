@@ -79,7 +79,6 @@ const displayMovements = function (movements) {
     containerMovements.insertAdjacentHTML('afterbegin', html);
   });
 };
-displayMovements(account1.movements);
 
 const calcDisplaySummary = function (acc) {
   const incomes = acc.movements
@@ -102,7 +101,7 @@ const calcDisplaySummary = function (acc) {
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}€`;
 };
-calcDisplaySummary(account1.movements);
+
 const createUsernams = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -112,6 +111,7 @@ const createUsernams = function (accs) {
       .join('');
   });
 };
+
 console.log(createUsernams(accounts));
 
 console.log('accounts:', accounts);
