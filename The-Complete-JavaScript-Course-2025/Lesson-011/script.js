@@ -302,7 +302,7 @@ const balance = movements.reduce(function (acc, cur, i, arr) {
   console.log(`Iteration ${i}:${acc}`);
   return acc + cur;
 }, 0);
-console.log(balance);*/
+console.log(balance);
 const balance = movements.reduce((acc, cur) => acc + cur, 0);
 console.log(balance);
 
@@ -350,4 +350,110 @@ console.log('First With Drawal:', firstWithdrawal);
 console.log('accounts:', accounts);
 
 const account = accounts.find(acc => acc.owner === 'Jessica Davis');
-console.log('account:', account);
+console.log('account:', account);*/
+
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log('Flaten array is:', arr.flat());
+console.log('Flaten array of a Deep arry is:', arrDeep.flat(2));
+
+/* const accountMovements = accounts.map(acc => acc.movements);
+console.log('Account Movements is:', accountMovements);
+const allMovements = accountMovements.flat();
+console.log('All Movements is:', allMovements);
+const overalBalance = allMovements.reduce((acc, mov) => acc + mov, 0);
+console.log('Overal Balance is:', overalBalance);
+
+const overalBalance = accounts
+  .map(acc => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log('Overal Balance is:', overalBalance);
+
+const overalBalance2 = accounts
+  .flatMap(acc => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log('Overal Balance 2 is:', overalBalance2);
+
+const breeds = [
+  {
+    breed: 'German Shepherd',
+    averageWeight: 32,
+    activities: ['fetch', 'swimming'],
+  },
+  {
+    breed: 'Dalmatian',
+    averageWeight: 24,
+    activities: ['running', 'fetch', 'agility'],
+  },
+  {
+    breed: 'Labrador',
+    averageWeight: 28,
+    activities: ['swimming', 'fetch'],
+  },
+  {
+    breed: 'Beagle',
+    averageWeight: 12,
+    activities: ['digging', 'fetch'],
+  },
+  {
+    breed: 'Husky',
+    averageWeight: 26,
+    activities: ['running', 'agility', 'swimming'],
+  },
+  {
+    breed: 'Bulldog',
+    averageWeight: 36,
+    activities: ['sleeping'],
+  },
+  {
+    breed: 'Poodle',
+    averageWeight: 18,
+    activities: ['agility', 'fetch'],
+  },
+];
+
+const huskyWeight = breeds.find(breed => breed.breed === 'Husky').averageWeight;
+console.log('Husky Wight:', huskyWeight);
+
+const dogBothactivities = breeds.find(
+  breed =>
+    breed.activities.includes('fetch') && breed.activities.includes('running')
+).breed;
+
+console.log('Dogs with two Activities:', dogBothactivities);
+
+const allActivites = breeds.map(breed => breed.activities).flat();
+console.log(allActivites);
+
+const uniqeActivities = new Set(allActivites);
+console.log('Unique activities are: ', uniqeActivities);
+
+const swimmingAdjacent = [
+  ...new Set(
+    breeds
+      .filter(breed => breed.activities.includes('swimming'))
+      .flatMap(breed => breed.activities)
+      .filter(activity => activity !== 'swimming')
+  ),
+];
+console.log('Swimming Adject: ', swimmingAdjacent);
+
+console.log(
+  'Breeds with more 10kg:',
+  breeds.every(breed => breed.averageWeight > 10)
+);
+console.log(
+  'Breeds with more 3 lengh:',
+  breeds.some(breeds => breeds.activities.length > 3)
+);
+
+//BONUS
+
+const fetchWeights = breeds
+  .filter(breed => breed.activities.includes('fetch'))
+  .map(breed => breed.averageWeight);
+const heaviestFetchBreed = Math.max(...fetchWeights);
+
+console.log('Fetch Wight:', fetchWeights);
+console.log('Havies Fetch Breed:', heaviestFetchBreed);*/
