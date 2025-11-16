@@ -61,8 +61,10 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-const displayMovements = function (movements) {
+const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
+
+  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
 
   movements.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
@@ -227,6 +229,12 @@ btnClose.addEventListener('click', function (e) {
   }
   inputCloseUsername.value = inputClosePin.value = '';
 });
+let sorted = false;
+btnSort.addEventListener('click', function (e) {
+  e.preventDefault();
+  displayMovements((currentAccount.movements, !sorted));
+  sorted = !sorted;
+});
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -352,11 +360,6 @@ console.log('accounts:', accounts);
 const account = accounts.find(acc => acc.owner === 'Jessica Davis');
 console.log('account:', account);*/
 
-const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
-const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
-console.log('Flaten array is:', arr.flat());
-console.log('Flaten array of a Deep arry is:', arrDeep.flat(2));
-
 /* const accountMovements = accounts.map(acc => acc.movements);
 console.log('Account Movements is:', accountMovements);
 const allMovements = accountMovements.flat();
@@ -457,3 +460,19 @@ const heaviestFetchBreed = Math.max(...fetchWeights);
 
 console.log('Fetch Wight:', fetchWeights);
 console.log('Havies Fetch Breed:', heaviestFetchBreed);*/
+
+const owner = ['Jonas', 'Zach', 'Adam', 'Martha'];
+console.log('Owner Sorted Array:', owner.sort());
+
+console.log('Movements Array:', movements);
+console.log('Movements Sorted Array:', movements.sort());
+
+movements.sort((a, b) => {
+  if (a < b) return 1;
+  if (b < a) return -1;
+});
+
+console.log('Movements sorted with (a,b):', movements);
+
+movements.sort((a, b) => a - b);
+console.log('Movements sorted with (a-b):', movements);
