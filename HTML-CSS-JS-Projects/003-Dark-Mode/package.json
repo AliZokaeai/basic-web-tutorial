@@ -1,0 +1,20 @@
+{
+  "name": "003-dark-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch src/scss:dist/css",
+    "sass:build": "sass src/scss:dist/css",
+    "sass:build-compressed": "sass src/scss:dist/css --style=compressed",
+    "dev": "npm-run-all --parallel sass:watch live-server",
+    "build": "npm run sass:build-compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.94.1"
+  }
+}

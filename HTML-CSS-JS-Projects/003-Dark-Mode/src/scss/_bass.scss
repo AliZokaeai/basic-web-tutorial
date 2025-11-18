@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #eee8e1;
+  --color-light-gray: #ddd;
+  --color-gray: #ccc;
+  --color-dark: #464646;
+  --color-light-dark: #777;
+  --color-dark-gray-1: #262626;
+  --color-dark-gray-2: #353535;
+  --color-red: #eb001b;
+  --color-orange: #ff5f00;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+}
