@@ -1,0 +1,40 @@
+@keyframes swingAnim {
+  0% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(100rem);
+  }
+  20% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(21rem);
+  }
+  25% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(27rem);
+  }
+  35%,
+  40% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-60rem);
+  }
+  55% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-55rem);
+  }
+  65%,
+  70% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-84rem);
+  }
+  100% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(-800rem);
+  }
+}
+
+@keyframes swing6Anim {
+  0% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(30rem);
+  }
+  100% {
+    transform: rotateX(70deg) rotateZ(-40deg) rotateY(5deg) translateY(0);
+  }
+}
