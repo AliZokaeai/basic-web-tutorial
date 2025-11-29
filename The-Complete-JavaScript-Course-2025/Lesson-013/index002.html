@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #panel,
+    .flip {
+        padding: 10px;
+        text-align: center;
+        background-color: #04aa6d;
+        color: white;
+        border: solid 1px #a6d8a8;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    #panel {
+        display: none;
+        cursor: auto;
+    }
+</style>
+
+<body>
+    <p class="flip" onclick="myFunction()">Click to show/hide panel</p>
+    <div id="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis architecto dicta odit quos vitae
+            exercitationem nesciunt maxime aspernatur possimus, ullam deleniti soluta eius, corrupti similique
+            consectetur, quidem dolor harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis architecto dicta odit quos vitae
+            exercitationem nesciunt maxime aspernatur possimus, ullam deleniti soluta eius, corrupti similique
+            consectetur, quidem dolor harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis architecto dicta odit quos vitae
+            exercitationem nesciunt maxime aspernatur possimus, ullam deleniti soluta eius, corrupti similique
+            consectetur, quidem dolor harum.</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("panel");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
