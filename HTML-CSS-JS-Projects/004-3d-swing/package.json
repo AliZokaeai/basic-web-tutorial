@@ -1,10 +1,10 @@
 {
-  "name": "Swing-3D",
+  "name": "3d-swing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "fuse:watch": "fuse -i ./main/main.html -o ./dist/output-watch.html -w",
+    "fuse:watch": "fuse -i ./main/main.html -o ./dist/index.html -w",
     "fuse:build": "fuse -i ./main/main.html -o ./dist/index.html ",
     "watch:sass": "sass scss/main.scss:css/style.css --watch",
     "devserver": "live-server",

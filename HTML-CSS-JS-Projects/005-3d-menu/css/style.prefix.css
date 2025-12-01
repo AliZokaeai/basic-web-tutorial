@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #030a1b;
+  -webkit-perspective: 40rem;
+          perspective: 40rem;
+}
+.container .menu {
+  width: 100%;
+  padding: 0 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.container .menu-item {
+  width: 20rem;
+  height: 15rem;
+  background-color: #5588dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 2rem rgba(100, 100, 255, 0.4);
+          box-shadow: 0 0 2rem rgba(100, 100, 255, 0.4);
+}
+.container .menu-item:hover {
+  background-color: #ccccff;
+  -webkit-box-shadow: 0 0 3rem rgba(100, 100, 255, 0.6);
+          box-shadow: 0 0 3rem rgba(100, 100, 255, 0.6);
+}
+.container .menu-item:not(.center-item) {
+  opacity: 0;
+}
+.container .menu-item:nth-child(1) {
+  -webkit-transform: rotateY(-70deg) rotateX(20deg) translateX(-50rem) translateY(-15rem) translateZ(-50rem);
+          transform: rotateY(-70deg) rotateX(20deg) translateX(-50rem) translateY(-15rem) translateZ(-50rem);
+  -webkit-transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+  transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+  transition: transform 1.2s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s;
+  transition: transform 1.2s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+}
+.container .menu-item:nth-child(2) {
+  -webkit-transform: rotateY(-70deg) rotateX(20deg) translateX(-20rem) translateY(-5rem) translateZ(-20rem);
+          transform: rotateY(-70deg) rotateX(20deg) translateX(-20rem) translateY(-5rem) translateZ(-20rem);
+  -webkit-transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s;
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+}
+.container .menu-item:nth-child(3) {
+  -webkit-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+  -webkit-transition: background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: transform 1s ease-in, background-color 0.5s, box-shadow 0.5s;
+  transition: transform 1s ease-in, background-color 0.5s, box-shadow 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+}
+.container .menu-item:nth-child(4) {
+  -webkit-transform: rotateY(70deg) rotateX(20deg) translateX(20rem) translateY(-5rem) translateZ(-20rem);
+          transform: rotateY(70deg) rotateX(20deg) translateX(20rem) translateY(-5rem) translateZ(-20rem);
+  -webkit-transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s;
+  transition: transform 1s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s, -webkit-transform 1s ease-in, -webkit-box-shadow 0.5s;
+}
+.container .menu-item:nth-child(5) {
+  -webkit-transform: rotateY(70deg) rotateX(20deg) translateX(50rem) translateY(-15rem) translateZ(-50rem);
+          transform: rotateY(70deg) rotateX(20deg) translateX(50rem) translateY(-15rem) translateZ(-50rem);
+  -webkit-transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+  transition: opacity 1s ease-in, background-color 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+  transition: transform 1.2s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s;
+  transition: transform 1.2s ease-in, opacity 1s ease-in, background-color 0.5s, box-shadow 0.5s, -webkit-transform 1.2s ease-in, -webkit-box-shadow 0.5s;
+}
+.container .menu-item i {
+  font-size: 7rem;
+  color: #222;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.container .menu-item:hover {
+  color: #6464ff;
+}
+
+.change.menu .menu-item {
+  -webkit-transform: rotateY(0) rotateX(0) translateX(0) translateY(0) translateZ(0);
+          transform: rotateY(0) rotateX(0) translateX(0) translateY(0) translateZ(0);
+  opacity: 1;
+}
